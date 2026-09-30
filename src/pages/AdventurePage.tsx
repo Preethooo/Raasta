@@ -10,6 +10,7 @@ import { CardRail } from '@/sections/Adventures';
 import { Reveal, useParallax } from '@/motion';
 import { CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
 import { NotFoundPage } from '@/pages/NotFoundPage';
+import { DarkSection, EdgeFade } from '@/components/Surface';
 
 // The map library is heavy; only load it on adventure pages.
 const RouteMap = lazy(() => import('@/components/RouteMap').then((m) => ({ default: m.RouteMap })));
@@ -64,6 +65,7 @@ function Banner({ adventure: a }: { adventure: Adventure }) {
         <MediaView media={a.banner} className="h-full w-full" />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/30" />
+      <EdgeFade to="white" height={140} />
 
       <div className={`${CONTAINER} relative flex h-full flex-col justify-end pb-14 md:pb-20`}>
         <Reveal>
@@ -178,7 +180,7 @@ function Timeline({ adventure: a }: { adventure: Adventure }) {
   }, []);
 
   return (
-    <section id="itinerary" data-surface="dark" className="scroll-mt-14 bg-[#0a0a0a] py-24 md:py-40 text-white">
+    <DarkSection id="itinerary" from="subtle" to="dark" className="scroll-mt-14 py-24 md:py-40">
       <div className={CONTAINER}>
         <Reveal>
           <p className="text-sm font-semibold text-white/55">Itinerary</p>
@@ -198,7 +200,7 @@ function Timeline({ adventure: a }: { adventure: Adventure }) {
           </div>
         </div>
       </div>
-    </section>
+    </DarkSection>
   );
 }
 
@@ -211,7 +213,7 @@ function DayRow({ day, index, reached }: { day: Day; index: number; reached: boo
       {/* Dot */}
       <span
         className={`absolute left-0 top-2 h-[15px] w-[15px] rounded-full border-2 transition-colors duration-500 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 ${
-          reached ? 'border-accent bg-accent shadow-[0_0_0_6px_rgba(255,90,31,0.2)]' : 'border-white/40 bg-[#0a0a0a]'
+          reached ? 'border-accent bg-accent shadow-[0_0_0_6px_rgba(255,90,31,0.2)]' : 'border-white/40 bg-[#17181b]'
         }`}
       />
 

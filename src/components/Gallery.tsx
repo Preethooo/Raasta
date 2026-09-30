@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Reveal } from '@/motion';
 import { CONTAINER, SECTION_TITLE } from '@/ui';
 import { creditLine, getPhoto } from '@/data/photos';
+import { DarkSection } from '@/components/Surface';
 
 /** `photos` are ids from the photo library (src/data/photos.json). */
 export function Gallery({ photos: ids, title = 'Gallery.' }: { photos: string[]; title?: string }) {
@@ -26,7 +27,7 @@ export function Gallery({ photos: ids, title = 'Gallery.' }: { photos: string[];
   }, [open, srcs.length]);
 
   return (
-    <section id="gallery" data-surface="dark" className="bg-[#0a0a0a] py-24 md:py-32 text-white">
+    <DarkSection id="gallery" from="white" to="subtle" className="py-24 md:py-32">
       <div className={CONTAINER}>
         <p className="text-sm font-semibold text-white/55">Gallery</p>
         <h2 className={`${SECTION_TITLE} mt-2`}>{title}</h2>
@@ -113,6 +114,6 @@ export function Gallery({ photos: ids, title = 'Gallery.' }: { photos: string[];
           </div>
         </div>
       )}
-    </section>
+    </DarkSection>
   );
 }

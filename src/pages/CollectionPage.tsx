@@ -15,6 +15,7 @@ import { AdventureCard } from '@/components/AdventureCard';
 import { Reveal, useParallax } from '@/motion';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
 import { NotFoundPage } from '@/pages/NotFoundPage';
+import { DarkSection, EdgeFade } from '@/components/Surface';
 
 type Collection = {
   kind: 'type' | 'region';
@@ -180,7 +181,7 @@ export function CollectionPage({ kind }: { kind: 'type' | 'region' }) {
       </section>
 
       {/* How it works */}
-      <section data-surface="dark" className="bg-[#0a0a0a] py-24 md:py-32 text-white">
+      <DarkSection from="white" to="white" className="py-24 md:py-32">
         <div className={CONTAINER}>
           <h2 className={SECTION_TITLE}>How it works.</h2>
           <ol className="mt-10 md:mt-14 grid gap-5 md:grid-cols-3">
@@ -195,7 +196,7 @@ export function CollectionPage({ kind }: { kind: 'type' | 'region' }) {
             ))}
           </ol>
         </div>
-      </section>
+      </DarkSection>
 
       <Faq />
 
@@ -227,6 +228,7 @@ function CollectionHero({ c }: { c: Collection }) {
         <img src={c.image} alt="" className="h-full w-full object-cover" />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30" />
+      <EdgeFade to="white" height={140} />
       <div className={`${CONTAINER} relative flex h-full flex-col justify-end pb-16 md:pb-24`}>
         <Reveal>
           <nav className="text-sm text-white/70">

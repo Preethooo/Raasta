@@ -4,6 +4,7 @@ import { CHOOSABLE, CREW, EQUIPMENT, type EquipmentItem } from '@/data/equipment
 import { creditLine, getPhoto } from '@/data/photos';
 import { Reveal } from '@/motion';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
+import { DarkSection } from '@/components/Surface';
 
 const LEAD: Record<CategoryId, string> = {
   motorbiking: 'Motorbikes, a mechanic and a ride leader come with every trip. No breakdown worries, no route-finding. You just ride.',
@@ -192,7 +193,7 @@ function EquipmentCard({
 export function Extras({ adventure: a }: { adventure: Adventure }) {
   if (!a.extras.length) return null;
   return (
-    <section data-surface="dark" className="bg-[#0a0a0a] pb-24 md:pb-32 text-white">
+    <DarkSection from="dark" to="white" className="pb-24 md:pb-32">
       <div className={CONTAINER}>
         <Reveal>
           <p className="inline-flex items-center gap-2 text-sm font-semibold text-accent">
@@ -224,6 +225,6 @@ export function Extras({ adventure: a }: { adventure: Adventure }) {
           })}
         </div>
       </div>
-    </section>
+    </DarkSection>
   );
 }
