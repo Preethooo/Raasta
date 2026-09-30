@@ -5,7 +5,6 @@ import { useVideoScrub } from '@/useVideoScrub';
 const VIDEO_SRC = '/hero.mp4';
 
 const DARK = '#1D3045';
-const darkA = (a: number) => `rgba(29, 48, 69, ${a})`;
 const EASE_OUT = 'cubic-bezier(0.16,1,0.3,1)';
 
 const NAV_LINKS = ['VECTRUS ENERGY', 'VECTRUS UPSTREAM', 'VECTRUS MARKETS', 'VECTRUS SYSTEMS', 'VECTRUS+'];
@@ -187,6 +186,13 @@ function s3Opacity(p: number) {
   return 1;
 }
 
+// One shared style for every headline: white, sentence case, same size.
+const HEADLINE_CLASS = 'font-medium text-white leading-[1.1] tracking-[-0.02em]';
+const HEADLINE_STYLE: CSSProperties = {
+  fontSize: 'clamp(2.75rem,6.5vw,6.5rem)',
+  textShadow: '0 2px 24px rgba(0, 0, 0, 0.35)',
+};
+
 const sectionStyle = (opacity: number): CSSProperties => ({
   opacity,
   transition: 'opacity 0.1s ease-out',
@@ -225,32 +231,23 @@ export default function App() {
           />
 
           <div className="absolute inset-0 pointer-events-none">
-            <Navbar isLight={p <= 0.55} onOpenMenu={() => setMenuOpen(true)} />
+            <Navbar isLight={false} onOpenMenu={() => setMenuOpen(true)} />
 
             {/* Section 1 */}
             <section
               className="absolute inset-0 flex flex-col justify-center px-6 sm:px-8 md:px-20 lg:px-32"
               style={sectionStyle(o1)}
             >
-              <Stagger visible={v1} delay={0}>
-                <h1
-                  className="font-light uppercase leading-[1.2]"
-                  style={{ fontSize: 'clamp(2rem,5vw,5rem)', color: DARK }}
-                >
-                  Advancing resources for a cleaner future
+              <Stagger visible={v1} delay={0} className="max-w-4xl">
+                <h1 className={HEADLINE_CLASS} style={HEADLINE_STYLE}>
+                  Beyond the obvious.
                 </h1>
-              </Stagger>
-              <Stagger visible={v1} delay={150} className="mt-6">
-                <p className="text-sm tracking-[0.3em] uppercase" style={{ color: '#1D304590' }}>
-                  Sustainable power with purpose
-                </p>
               </Stagger>
               <Stagger visible={v1} delay={300} className="absolute bottom-12 right-6 sm:right-8 md:right-12">
                 <button
                   type="button"
                   aria-label="Next"
-                  className="flex items-center justify-center w-12 h-12 rounded-full border hover:opacity-70 transition-opacity"
-                  style={{ borderColor: darkA(0.5), color: DARK }}
+                  className="flex items-center justify-center w-12 h-12 rounded-full border border-white/50 text-white hover:opacity-70 transition-opacity"
                 >
                   <ArrowRight size={18} />
                 </button>
@@ -262,14 +259,11 @@ export default function App() {
               className="absolute inset-0 flex items-center justify-center px-6 sm:px-8"
               style={sectionStyle(o2)}
             >
-              <Stagger visible={v2} delay={0} className="max-w-[900px]">
-                <h2
-                  className="font-extralight tracking-wide leading-[1.3] text-center uppercase"
-                  style={{ fontSize: 'clamp(1.5rem,4.5vw,4.5rem)', color: DARK }}
-                >
-                  We build lasting partnerships with vision{' '}
-                  <span style={{ color: darkA(0.8) }}>and precision</span>{' '}
-                  <span style={{ color: darkA(0.5) }}>across every frontier</span>
+              <Stagger visible={v2} delay={0}>
+                <h2 className={`${HEADLINE_CLASS} text-center`} style={HEADLINE_STYLE}>
+                  Thoughtfully crafted journeys.
+                  <br />
+                  Deeply local experiences.
                 </h2>
               </Stagger>
               <div className="absolute bottom-16 right-6 sm:right-8 md:right-12 flex flex-col items-center gap-4">
@@ -277,23 +271,21 @@ export default function App() {
                   <button
                     type="button"
                     aria-label="Scroll down"
-                    className="flex items-center justify-center w-12 h-12 rounded-full border"
-                    style={{ borderColor: darkA(0.4), color: DARK }}
+                    className="flex items-center justify-center w-12 h-12 rounded-full border border-white/50 text-white"
                   >
                     <ArrowDown size={18} />
                   </button>
                 </Stagger>
                 <Stagger visible={v2} delay={350} className="mt-4 flex flex-col items-center gap-2">
-                  <span className="block w-2 h-2 rounded-full" style={{ background: DARK }} />
-                  <span className="block w-1.5 h-1.5 rounded-full" style={{ background: darkA(0.4) }} />
-                  <span className="block w-1.5 h-1.5 rounded-full" style={{ background: darkA(0.4) }} />
+                  <span className="block w-2 h-2 rounded-full bg-white" />
+                  <span className="block w-1.5 h-1.5 rounded-full bg-white/50" />
+                  <span className="block w-1.5 h-1.5 rounded-full bg-white/50" />
                 </Stagger>
                 <Stagger visible={v2} delay={500} className="mt-2">
                   <button
                     type="button"
                     aria-label="Scroll up"
-                    className="flex items-center justify-center w-10 h-10 rounded-full border"
-                    style={{ borderColor: darkA(0.3), color: darkA(0.8) }}
+                    className="flex items-center justify-center w-10 h-10 rounded-full border border-white/40 text-white/80"
                   >
                     <ChevronUp size={16} />
                   </button>
@@ -306,31 +298,11 @@ export default function App() {
               className="absolute inset-0 flex items-center justify-end px-6 sm:px-8 md:px-20 lg:px-32"
               style={sectionStyle(o3)}
             >
-              <div className="max-w-2xl text-left">
-                <Stagger visible={v3} delay={0}>
-                  <p className="text-white/60 text-lg tracking-wide mb-4">Halder | Nordvik</p>
-                </Stagger>
-                <Stagger visible={v3} delay={150}>
-                  <h2
-                    className="font-light text-white leading-[1.2] uppercase tracking-wide mb-8"
-                    style={{ fontSize: 'clamp(2rem,4vw,4rem)' }}
-                  >
-                    Fueling ambition,
-                    <br />
-                    shaping tomorrow.
-                  </h2>
-                </Stagger>
-                <Stagger visible={v3} delay={300} className="flex items-center gap-4">
-                  <span className="text-sm tracking-[0.3em] text-white/80 uppercase">Contact Nordvik</span>
-                  <button
-                    type="button"
-                    aria-label="Contact Nordvik"
-                    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-gray-800 hover:scale-110 transition-transform duration-300"
-                  >
-                    <ArrowRight size={16} />
-                  </button>
-                </Stagger>
-              </div>
+              <Stagger visible={v3} delay={0} className="max-w-3xl">
+                <h2 className={HEADLINE_CLASS} style={HEADLINE_STYLE}>
+                  Explore India differently.
+                </h2>
+              </Stagger>
             </section>
           </div>
         </div>
