@@ -1,4 +1,59 @@
 {
+  "alappuzha/kerala-backwaters-canal-palm-trees-india": {
+    "id": "alappuzha/kerala-backwaters-canal-palm-trees-india",
+    "place": "alappuzha",
+    "file": "/images/places/alappuzha/kerala-backwaters-canal-palm-trees-india.webp",
+    "caption": "A canoe under the palms, Kerala backwaters",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerala_backwaters,_Canal,_Palm_trees,_India.jpg"
+  },
+  "alappuzha/kerala-backwaters-houseboats-india": {
+    "id": "alappuzha/kerala-backwaters-houseboats-india",
+    "place": "alappuzha",
+    "file": "/images/places/alappuzha/kerala-backwaters-houseboats-india.webp",
+    "caption": "A kettuvallam houseboat on the backwaters",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerala_backwaters,_Houseboats,_India.jpg"
+  },
+  "alappuzha/kerala-backwaters-near-nedumudy-2": {
+    "id": "alappuzha/kerala-backwaters-near-nedumudy-2",
+    "place": "alappuzha",
+    "file": "/images/places/alappuzha/kerala-backwaters-near-nedumudy-2.webp",
+    "caption": "Palm-lined backwaters, Alappuzha",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerala_Backwaters_near_Nedumudy_-_2.jpg"
+  },
+  "alappuzha/kerala-backwaters-near-nedumudy-4": {
+    "id": "alappuzha/kerala-backwaters-near-nedumudy-4",
+    "place": "alappuzha",
+    "file": "/images/places/alappuzha/kerala-backwaters-near-nedumudy-4.webp",
+    "caption": "The backwaters near Nedumudy, Alappuzha",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerala_Backwaters_near_Nedumudy_-_4.jpg"
+  },
+  "alappuzha/nedumudy-houseboat": {
+    "id": "alappuzha/nedumudy-houseboat",
+    "place": "alappuzha",
+    "file": "/images/places/alappuzha/nedumudy-houseboat.webp",
+    "caption": "A traditional houseboat, Alappuzha",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nedumudy_-_Houseboat.jpg"
+  },
   "andaman-reef/coral-reef-elephant-beach-andaman-09": {
     "id": "andaman-reef/coral-reef-elephant-beach-andaman-09",
     "place": "andaman-reef",
@@ -142,6 +197,61 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:KAD012-Supa_Dam-Kali_River-near_Dandeli.jpg"
   },
+  "equipment/rockrider540s-mallorca": {
+    "id": "equipment/rockrider540s-mallorca",
+    "place": "equipment",
+    "file": "/images/places/equipment/rockrider540s-mallorca.webp",
+    "caption": "Decathlon Rockrider mountain bike",
+    "author": "Rafael Ortega D\u00edaz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rockrider540s-mallorca.jpeg"
+  },
+  "equipment/royal-enfield-classic-350-2017-model-year": {
+    "id": "equipment/royal-enfield-classic-350-2017-model-year",
+    "place": "equipment",
+    "file": "/images/places/equipment/royal-enfield-classic-350-2017-model-year.webp",
+    "caption": "Royal Enfield Classic 350",
+    "author": "Samihasib",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Enfield_Classic_350_(2017_Model_Year).jpg"
+  },
+  "equipment/royal-enfield-himalayan-450": {
+    "id": "equipment/royal-enfield-himalayan-450",
+    "place": "equipment",
+    "file": "/images/places/equipment/royal-enfield-himalayan-450.webp",
+    "caption": "Royal Enfield Himalayan 450",
+    "author": "Rouv1505",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal-Enfield-Himalayan-450.jpg"
+  },
+  "equipment/sea-kayak": {
+    "id": "equipment/sea-kayak",
+    "place": "equipment",
+    "file": "/images/places/equipment/sea-kayak.webp",
+    "caption": "A touring sea kayak",
+    "author": "Thruxton",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_Kayak.JPG"
+  },
+  "equipment/tent-camps-in-sarchu": {
+    "id": "equipment/tent-camps-in-sarchu",
+    "place": "equipment",
+    "file": "/images/places/equipment/tent-camps-in-sarchu.webp",
+    "caption": "Expedition tents at Sarchu",
+    "author": "Oindrilabhol",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent_camps_in_Sarchu.jpg"
+  },
   "gangtok/kanchenjunga-himalayas": {
     "id": "gangtok/kanchenjunga-himalayas",
     "place": "gangtok",
@@ -256,12 +366,45 @@
     "id": "kaza/spiti-river-right-bank-vista-himachal",
     "place": "kaza",
     "file": "/images/places/kaza/spiti-river-right-bank-vista-himachal.webp",
-    "caption": "Spiti valley from the river’s right bank",
+    "caption": "Spiti valley from the river\u2019s right bank",
     "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spiti_River_Right_Bank_Vista_Himachal_Jun18_D72_7628.jpg"
+  },
+  "kerala-backwaters/kerala-backwater-20080218-11": {
+    "id": "kerala-backwaters/kerala-backwater-20080218-11",
+    "place": "kerala-backwaters",
+    "file": "/images/places/kerala-backwaters/kerala-backwater-20080218-11.webp",
+    "caption": "A canoe on the misty backwaters",
+    "author": "Hans A. Rosbach",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerala_backwater_20080218-11.jpg"
+  },
+  "kerala-backwaters/kerala-backwater-fishing": {
+    "id": "kerala-backwaters/kerala-backwater-fishing",
+    "place": "kerala-backwaters",
+    "file": "/images/places/kerala-backwaters/kerala-backwater-fishing.webp",
+    "caption": "Fishing from a canoe on the backwaters",
+    "author": "Rahulbose",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerala_Backwater_Fishing.jpg"
+  },
+  "kerala-backwaters/single-man-backwater-canoe": {
+    "id": "kerala-backwaters/single-man-backwater-canoe",
+    "place": "kerala-backwaters",
+    "file": "/images/places/kerala-backwaters/single-man-backwater-canoe.webp",
+    "caption": "Paddling a canoe past a houseboat",
+    "author": "Liji Jinaraj from San Francisco, USA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Single_man_backwater_canoe_(4231302512).jpg"
   },
   "key-monastery/kee-monastery-spiti-valley": {
     "id": "key-monastery/kee-monastery-spiti-valley",
@@ -351,11 +494,33 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kibber_Spiti_Himachal_Jun18_D72_7488.jpg"
   },
+  "kochi/chinese-fishing-nets-3": {
+    "id": "kochi/chinese-fishing-nets-3",
+    "place": "kochi",
+    "file": "/images/places/kochi/chinese-fishing-nets-3.webp",
+    "caption": "Chinese fishing nets, Fort Kochi",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Nets_-_3.jpg"
+  },
+  "kochi/fort-kochi-fisher-1": {
+    "id": "kochi/fort-kochi-fisher-1",
+    "place": "kochi",
+    "file": "/images/places/kochi/fort-kochi-fisher-1.webp",
+    "caption": "A fisherman casting a net off Fort Kochi",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fort_Kochi_-_Fisher_-_1.jpg"
+  },
   "kudremukh/kudremukh": {
     "id": "kudremukh/kudremukh",
     "place": "kudremukh",
     "file": "/images/places/kudremukh/kudremukh.webp",
-    "caption": "Kudremukh’s grassland hills",
+    "caption": "Kudremukh\u2019s grassland hills",
     "author": "Dhruvaraj S from India",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -564,12 +729,78 @@
     "id": "mullayanagiri/mullayanagiri-chikmagalur-district-of-karnataka",
     "place": "mullayanagiri",
     "file": "/images/places/mullayanagiri/mullayanagiri-chikmagalur-district-of-karnataka.webp",
-    "caption": "Mullayanagiri, Karnataka’s highest peak",
+    "caption": "Mullayanagiri, Karnataka\u2019s highest peak",
     "author": "RakeshRaju M",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mullayanagiri,_Chikmagalur_district_of_Karnataka.jpg"
+  },
+  "munroe-island/chinese-fishing-net-raised-birds-sunrise-ashtamudi-kollam": {
+    "id": "munroe-island/chinese-fishing-net-raised-birds-sunrise-ashtamudi-kollam",
+    "place": "munroe-island",
+    "file": "/images/places/munroe-island/chinese-fishing-net-raised-birds-sunrise-ashtamudi-kollam.webp",
+    "caption": "Chinese fishing nets at sunrise, Ashtamudi Lake",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Net_Raised_Birds_Sunrise_Ashtamudi_Kollam_Mar22_A7C_01793.jpg"
+  },
+  "munroe-island/chinese-fishing-net-raising-birds-sunrise-ashtamudi-kollam": {
+    "id": "munroe-island/chinese-fishing-net-raising-birds-sunrise-ashtamudi-kollam",
+    "place": "munroe-island",
+    "file": "/images/places/munroe-island/chinese-fishing-net-raising-birds-sunrise-ashtamudi-kollam.webp",
+    "caption": "A Chinese fishing net raised at sunrise, Ashtamudi Lake",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Fishing_Net_Raising_Birds_Sunrise_Ashtamudi_Kollam_Mar22_A7C_01784.jpg"
+  },
+  "munroe-island/fishing-boat-net-ashtamudi-lake-kerala": {
+    "id": "munroe-island/fishing-boat-net-ashtamudi-lake-kerala",
+    "place": "munroe-island",
+    "file": "/images/places/munroe-island/fishing-boat-net-ashtamudi-lake-kerala.webp",
+    "caption": "Fishermen in a canoe, Ashtamudi Lake",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fishing_Boat_Net_Ashtamudi_Lake_Kerala_Mar22_A7C_01513.jpg"
+  },
+  "munroe-island/little-egrets-line-fishing-boom-ashtamudi-kerala": {
+    "id": "munroe-island/little-egrets-line-fishing-boom-ashtamudi-kerala",
+    "place": "munroe-island",
+    "file": "/images/places/munroe-island/little-egrets-line-fishing-boom-ashtamudi-kerala.webp",
+    "caption": "Egrets on the nets, Ashtamudi Lake",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Egrets_Line_Fishing_Boom_Ashtamudi_Kerala_Mar22_A7C_01400.jpg"
+  },
+  "munroe-island/mangrove-arch-boat-ashtamudi-kollam-kerala": {
+    "id": "munroe-island/mangrove-arch-boat-ashtamudi-kollam-kerala",
+    "place": "munroe-island",
+    "file": "/images/places/munroe-island/mangrove-arch-boat-ashtamudi-kollam-kerala.webp",
+    "caption": "Punting through a mangrove arch, Ashtamudi Lake",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mangrove_Arch_Boat_Ashtamudi_Kollam_Kerala_Mar22_A7C_01490.jpg"
+  },
+  "munroe-island/mangrove-reflection-wide-ashtamudi-kollam-kerala": {
+    "id": "munroe-island/mangrove-reflection-wide-ashtamudi-kollam-kerala",
+    "place": "munroe-island",
+    "file": "/images/places/munroe-island/mangrove-reflection-wide-ashtamudi-kollam-kerala.webp",
+    "caption": "A lone mangrove at dawn on Ashtamudi Lake",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mangrove_Reflection_Wide_Ashtamudi_Kollam_Kerala_Mar22_A7C_01464.jpg"
   },
   "neil/collared-kingfisher-at-neil-island-shaheed-dweep-south-andam": {
     "id": "neil/collared-kingfisher-at-neil-island-shaheed-dweep-south-andam",

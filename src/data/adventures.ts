@@ -1,5 +1,5 @@
 import { Bike, Motorbike, Mountain, Tent, Trees, Waves, type LucideIcon } from 'lucide-react';
-import { photoSrc } from '@/data/photos';
+import { photoSrc } from './photos.ts';
 
 /*
  * Placeholder catalogue. Categories follow what Indian adventure operators commonly
@@ -98,6 +98,9 @@ export type Day = {
   media: Media;
 };
 
+/** Something unique we lay on for this trip (rafting, a campfire, a kayak day...). */
+export type Extra = { title: string; body: string; photo: string };
+
 export type Adventure = {
   slug: string;
   place: string;
@@ -120,6 +123,9 @@ export type Adventure = {
   legModes: LegMode[];
   days: Day[];
   gallery: string[];
+  /** Equipment ids from src/data/equipment.ts that Raasta provides on this trip. */
+  equipment: string[];
+  extras: Extra[];
 };
 
 /** Spots are "filling fast" once 30% or fewer remain. */
@@ -201,6 +207,24 @@ export const ADVENTURES: Adventure[] = [
       'chikmagalur/baba-budangiri-chikmagalur-37',
       'dandeli/kad012-supa-dam-kali-river-near-dandeli',
     ],
+    equipment: ['re-himalayan-450', 're-classic-350', 'riding-gear'],
+    extras: [
+      {
+        title: 'White-water rafting on the Kali',
+        body: 'A morning on the Kali river’s rapids with certified rafting guides and all safety kit.',
+        photo: 'dandeli/dandeli-river-rafting',
+      },
+      {
+        title: 'Coracle at sunrise',
+        body: 'Drift the calm upper river in a traditional round coracle as the forest wakes up.',
+        photo: 'dandeli/a-perfect-day-for-rafting',
+      },
+      {
+        title: 'Hornbill walk',
+        body: 'A dawn walk with a local naturalist to find the great and Malabar pied hornbills.',
+        photo: 'dandeli/hornbill-at-dandeli',
+      },
+    ],
   },
   {
     slug: 'ladakh',
@@ -244,6 +268,19 @@ export const ADVENTURES: Adventure[] = [
       'chang-la/changla-pass-india-2',
       'leh/leh-02',
     ],
+    equipment: ['re-himalayan-450', 're-classic-350', 'riding-gear'],
+    extras: [
+      {
+        title: 'Camel trail in the Hunder dunes',
+        body: 'An evening on double-humped Bactrian camels across the Nubra dunes.',
+        photo: 'nubra/nubra-valley',
+      },
+      {
+        title: 'Lakeside camp at Pangong',
+        body: 'A night on the shore of Pangong Tso with a bonfire and more stars than sky.',
+        photo: 'pangong/late-afternoon-at-the-pangong-tso',
+      },
+    ],
   },
   {
     slug: 'spiti',
@@ -286,6 +323,24 @@ export const ADVENTURES: Adventure[] = [
       'langza/star-trail-with-buddha-statue-from-langza',
       'pin-valley/pin-valley-spiti-himachal',
     ],
+    equipment: [],
+    extras: [
+      {
+        title: 'Rock climbing near Kaza',
+        body: 'A half-day on Spiti’s cliffs with certified climbing instructors, ropes and harnesses provided. No experience needed.',
+        photo: 'spiti/spiti-gorge-kaza-losar',
+      },
+      {
+        title: 'Stargazing at Langza',
+        body: 'A telescope night at 4,400 m in one of the darkest skies in India.',
+        photo: 'langza/star-trail-with-buddha-statue-from-langza',
+      },
+      {
+        title: 'Fossil hunt',
+        body: 'Search the hillsides above Langza for marine fossils from the ancient Tethys Sea.',
+        photo: 'langza/buddha-statue-langza',
+      },
+    ],
   },
   {
     slug: 'himachal',
@@ -325,6 +380,19 @@ export const ADVENTURES: Adventure[] = [
       'lahaul/lord-vishnu-taal-lake-lahaul-and-spiti-dist-hp-india',
       'rohtang/rainbow-from-rohtang-pass-road-1',
       'lahaul/kardhang-biling-bhaga-dhauladhar',
+    ],
+    equipment: ['rockrider-st540'],
+    extras: [
+      {
+        title: 'Riverside camp at Jispa',
+        body: 'Tents on the banks of the Bhaga with a campfire and a hot dinner after the day’s ride.',
+        photo: 'lahaul/bhaga-gemur-downstream-lahaul',
+      },
+      {
+        title: 'Hike to Vishnu Taal',
+        body: 'A morning off the bike, walking up to a high glacial lake above the valley.',
+        photo: 'lahaul/lord-vishnu-taal-lake-lahaul-and-spiti-dist-hp-india',
+      },
     ],
   },
   {
@@ -366,6 +434,19 @@ export const ADVENTURES: Adventure[] = [
       'yumthang/rhododendron-hodgsonii-shingba-rs-ajtj',
       'yumthang/landscape-on-the-way-from-yumthang-valley-to-yumsedong-zero-',
     ],
+    equipment: [],
+    extras: [
+      {
+        title: 'Rhododendron sanctuary walk',
+        body: 'A guided walk through the Shingba sanctuary at the height of the spring bloom.',
+        photo: 'yumthang/rhododendron-thompsonii-shingba-rs-ajtj',
+      },
+      {
+        title: 'Hot springs at Yumthang',
+        body: 'Soak in the valley’s natural sulphur springs with the peaks all around.',
+        photo: 'yumthang/yumthang-valley-by-ss',
+      },
+    ],
   },
   {
     slug: 'andaman',
@@ -405,6 +486,24 @@ export const ADVENTURES: Adventure[] = [
       'neil/shaheed-island-andamans-mangrove-beach-true-wilderness',
       'havelock/havelock-island-mangrove-tree-rising-out-of-tropical-sea-and',
       'havelock/radhanagar-beach-havelock-vrvbaan042k24',
+    ],
+    equipment: ['touring-kayak'],
+    extras: [
+      {
+        title: 'Mangrove kayaking at Baratang',
+        body: 'Paddle narrow creeks under a mangrove canopy with a local guide.',
+        photo: 'baratang/mangroves-at-baratangandaman',
+      },
+      {
+        title: 'Snorkelling at Elephant Beach',
+        body: 'Masks, fins and a guide for the reefs off Swaraj Dweep.',
+        photo: 'andaman-reef/snorkeling-at-elephant-beach-havelock-islandandaman',
+      },
+      {
+        title: 'Beach camp',
+        body: 'A night on a quiet beach with a bonfire and the sound of the sea.',
+        photo: 'neil/shaheed-island-andamans-mangrove-beach-true-wilderness',
+      },
     ],
   },
   {
@@ -446,6 +545,109 @@ export const ADVENTURES: Adventure[] = [
       'zanskar/tsarap-river2',
       'padum/ne-view-stongdey-zanskar',
       'rangdum/rangdum-monastery-zanskar-india',
+    ],
+    equipment: ['camping-kit'],
+    extras: [
+      {
+        title: 'Tents and a campfire every night',
+        body: 'Our crew pitches camp before you arrive: warm tents, a dining tent and a fire under the stars.',
+        photo: 'equipment/tent-camps-in-sarchu',
+      },
+      {
+        title: 'Rafting the Zanskar river',
+        body: 'A day on one of the Himalaya’s great rivers with expedition rafting guides.',
+        photo: 'zanskar/fields-zangla-zanskar-river-ladakh',
+      },
+      {
+        title: 'Glacier walk at Drang Drung',
+        body: 'A guided walk to the edge of the longest glacier in Ladakh.',
+        photo: 'pensi-la/drang-drung-glacier',
+      },
+    ],
+  },
+  {
+    slug: 'kerala-backwaters',
+    place: 'Kerala backwaters',
+    region: 'Kerala',
+    activity: 'Kayaking the backwaters',
+    category: 'water',
+    zone: 'south',
+    seasons: ['autumn', 'winter'],
+    summary: 'Paddle village canals, sleep on a houseboat and wake to mangroves at dawn.',
+    description:
+      'Five slow days on the water between Fort Kochi and Ashtamudi Lake. Our crew meets you each morning with a jeep and the kayaks, launches you into a different stretch of backwater, and has lunch waiting on the bank. Nights are in homestays and on a traditional kettuvallam houseboat.',
+    difficulty: 'Easy',
+    season: 'October to March',
+    nextDeparture: '9 January 2027',
+    groupSize: 10,
+    spotsLeft: 7,
+    image: photoSrc('alappuzha/kerala-backwaters-canal-palm-trees-india'),
+    banner: pic('alappuzha/kerala-backwaters-near-nedumudy-4'),
+    stops: [
+      { name: 'Fort Kochi', note: 'Start · Day 1', coords: [76.2425, 9.9658] },
+      { name: 'Alappuzha', note: 'Backwaters · Days 2–3', coords: [76.3388, 9.4981] },
+      { name: 'Munroe Island', note: 'Ashtamudi Lake · Days 4–5', coords: [76.613, 8.9938] },
+    ],
+    legModes: ['road', 'road'],
+    days: [
+      {
+        title: 'Fort Kochi by the water',
+        body: 'Arrive, meet the crew and walk the old port to the Chinese fishing nets for sunset.',
+        highlights: ['Heritage walk', 'Homestay'],
+        media: pic('kochi/chinese-fishing-nets-3'),
+      },
+      {
+        title: 'First paddle, village canals',
+        body: 'The jeep drops you and the kayaks at a quiet canal outside Alappuzha. A gentle first paddle past paddy fields and village jetties.',
+        highlights: ['12 km paddle', 'Canal-side lunch'],
+        media: pic('kerala-backwaters/single-man-backwater-canoe'),
+      },
+      {
+        title: 'Vembanad and the houseboat',
+        body: 'Cross a corner of Vembanad Lake by kayak, then board a kettuvallam for a night afloat.',
+        highlights: ['Lake crossing', 'Houseboat night'],
+        media: pic('alappuzha/kerala-backwaters-houseboats-india'),
+      },
+      {
+        title: 'Munroe Island’s mangrove canals',
+        body: 'Transfer south to Ashtamudi Lake and paddle the narrow mangrove canals of Munroe Island with a local boatman.',
+        highlights: ['Mangrove paddle', 'Village homestay'],
+        media: pic('munroe-island/mangrove-arch-boat-ashtamudi-kollam-kerala'),
+      },
+      {
+        title: 'Dawn on Ashtamudi',
+        body: 'A last sunrise paddle among the egrets and fishing nets, breakfast on the bank, and goodbyes.',
+        highlights: ['Sunrise paddle', 'Transfer to Kochi'],
+        media: pic('munroe-island/mangrove-reflection-wide-ashtamudi-kollam-kerala'),
+      },
+    ],
+    gallery: [
+      'munroe-island/chinese-fishing-net-raised-birds-sunrise-ashtamudi-kollam',
+      'alappuzha/nedumudy-houseboat',
+      'alappuzha/kerala-backwaters-near-nedumudy-2',
+      'munroe-island/little-egrets-line-fishing-boom-ashtamudi-kerala',
+      'munroe-island/fishing-boat-net-ashtamudi-lake-kerala',
+      'kerala-backwaters/kerala-backwater-20080218-11',
+      'kerala-backwaters/kerala-backwater-fishing',
+      'kochi/fort-kochi-fisher-1',
+    ],
+    equipment: ['touring-kayak'],
+    extras: [
+      {
+        title: 'Kayaks come to you',
+        body: 'Every morning our crew arrives by jeep with the kayaks and launches you into a new stretch of backwater. No boat queues, no crowds.',
+        photo: 'kerala-backwaters/kerala-backwater-20080218-11',
+      },
+      {
+        title: 'A night on a kettuvallam',
+        body: 'A traditional rice-barge houseboat with a local crew and a Kerala dinner on deck.',
+        photo: 'alappuzha/nedumudy-houseboat',
+      },
+      {
+        title: 'Toddy-shop lunch',
+        body: 'Lunch at a canal-side shaap: karimeen fish, tapioca and the backwaters’ own cooking.',
+        photo: 'alappuzha/kerala-backwaters-near-nedumudy-2',
+      },
     ],
   },
 ];

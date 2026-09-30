@@ -1,4 +1,5 @@
 import type { CSSProperties, ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowDown, ArrowRight, ChevronUp } from 'lucide-react';
 import { useVideoScrub } from '@/useVideoScrub';
 import { EASE_OUT } from '@/ui';
@@ -160,11 +161,21 @@ export function Hero() {
             className="absolute inset-0 flex items-center justify-end px-6 sm:px-8 md:px-20 lg:px-32"
             style={sectionStyle(o3)}
           >
-            <Stagger visible={v3} delay={0} className="max-w-3xl">
-              <h2 className={HEADLINE_CLASS} style={HEADLINE_STYLE}>
-                Explore India differently.
-              </h2>
-            </Stagger>
+            <div className="max-w-3xl">
+              <Stagger visible={v3} delay={0}>
+                <h2 className={HEADLINE_CLASS} style={HEADLINE_STYLE}>
+                  Explore India differently.
+                </h2>
+              </Stagger>
+              <Stagger visible={v3} delay={200} className="mt-8">
+                <Link
+                  to="/adventures"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-[17px] font-medium text-[#1d1d1f] transition-transform duration-300 hover:scale-105"
+                >
+                  Explore adventures <ArrowRight size={18} />
+                </Link>
+              </Stagger>
+            </div>
           </section>
         </div>
       </div>

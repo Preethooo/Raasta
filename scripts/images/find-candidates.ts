@@ -1,6 +1,6 @@
 // Searches Wikimedia Commons for commercially usable photos of each place in
 // scripts/images/places.json and writes candidates for manual review.
-//   node scripts/images/find-candidates.ts <out.json>
+//   node scripts/images/find-candidates.ts <out.json> [placeId,placeId,...]
 // Only CC0 / public domain / CC BY / CC BY-SA photos, landscape, >= 1800 px wide.
 import { readFileSync, writeFileSync } from 'node:fs';
 
@@ -23,7 +23,10 @@ const API = 'https://commons.wikimedia.org/w/api.php';
 const ALLOWED = /^(CC0|Public domain|CC BY(-SA)? \d(\.\d)?)/i;
 const REJECT = /map|flag|logo|\.svg|diagram|stamp|coat of arms|poster|chart|satellite|nasa|sentinel/i;
 
-const places: Place[] = JSON.parse(readFileSync(new URL('./places.json', import.meta.url), 'utf8'));
+const only = process.argv[3]?.split(',');
+const places: Place[] = (JSON.parse(readFileSync(new URL('./places.json', import.meta.url), 'utf8')) as Place[]).filter(
+  (p) => !only || only.includes(p.id),
+);
 const stripHtml = (s = '') => s.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 
 async function search(query: string, limit: number) {
@@ -80,7 +83,7 @@ for (const place of places) {
   }
   // Quality-reviewed first, then larger files.
   found.sort((a, b) => Number(b.quality) - Number(a.quality) || b.width - a.width);
-  out.push(...found.slice(0, 12));
+  out.push(...found.slice(0, place.id === 'equipment' ? 30 : 12));
   console.log(place.id.padEnd(16), found.length, 'usable,', found.filter((f) => f.quality).length, 'quality');
 }
 

@@ -1,38 +1,343 @@
 [
-  { "id": "chikmagalur", "adventure": "western-ghats", "name": "Chikmagalur coffee estates", "queries": ["Chikmagalur coffee plantation", "Chikmagalur hills", "Baba Budangiri"] },
-  { "id": "mullayanagiri", "adventure": "western-ghats", "name": "Mullayanagiri", "queries": ["Mullayanagiri", "Mullayanagiri clouds"] },
-  { "id": "kudremukh", "adventure": "western-ghats", "name": "Kudremukh", "queries": ["Kudremukh", "Kudremukh National Park", "Kudremukh shola grassland"] },
-  { "id": "western-ghats", "adventure": "western-ghats", "name": "Western Ghats", "queries": ["Western Ghats Karnataka monsoon", "Agumbe ghat", "Charmadi ghat"] },
-  { "id": "dandeli", "adventure": "western-ghats", "name": "Dandeli and the Kali river", "queries": ["Dandeli", "Kali river Dandeli", "Dandeli rafting", "Great hornbill Dandeli"] },
-
-  { "id": "leh", "adventure": "ladakh", "name": "Leh", "queries": ["Leh Palace", "Leh Ladakh town", "Shanti Stupa Leh"] },
-  { "id": "thiksey", "adventure": "ladakh", "name": "Thiksey Monastery", "queries": ["Thiksey Monastery", "Hemis Monastery"] },
-  { "id": "khardung-la", "adventure": "ladakh", "name": "Khardung La", "queries": ["Khardung La", "Khardung La road"] },
-  { "id": "nubra", "adventure": "ladakh", "name": "Nubra Valley", "queries": ["Nubra Valley", "Hunder sand dunes", "Diskit Monastery"] },
-  { "id": "pangong", "adventure": "ladakh", "name": "Pangong Tso", "queries": ["Pangong Tso", "Pangong Lake"] },
-  { "id": "chang-la", "adventure": "ladakh", "name": "Chang La", "queries": ["Chang La", "Chang La pass Ladakh"] },
-
-  { "id": "kaza", "adventure": "spiti", "name": "Kaza", "queries": ["Kaza Spiti", "Spiti Valley"] },
-  { "id": "key-monastery", "adventure": "spiti", "name": "Key Monastery", "queries": ["Key Monastery", "Kye Gompa"] },
-  { "id": "kibber", "adventure": "spiti", "name": "Kibber", "queries": ["Kibber village", "Kibber Spiti"] },
-  { "id": "langza", "adventure": "spiti", "name": "Langza", "queries": ["Langza", "Langza Buddha statue"] },
-
-  { "id": "manali", "adventure": "himachal", "name": "Manali", "queries": ["Manali Himachal mountains", "Solang Valley", "Rohtang Pass"] },
-  { "id": "atal-tunnel", "adventure": "himachal", "name": "Atal Tunnel", "queries": ["Atal Tunnel", "Rohtang tunnel north portal"] },
-  { "id": "sissu", "adventure": "himachal", "name": "Sissu", "queries": ["Sissu Lahaul", "Sissu waterfall", "Lahaul valley"] },
-  { "id": "jispa", "adventure": "himachal", "name": "Jispa", "queries": ["Jispa", "Bhaga river", "Keylong"] },
-
-  { "id": "gangtok", "adventure": "sikkim", "name": "Gangtok", "queries": ["Gangtok Kanchenjunga", "Gangtok"] },
-  { "id": "lachung", "adventure": "sikkim", "name": "Lachung", "queries": ["Lachung", "Lachung village Sikkim"] },
-  { "id": "yumthang", "adventure": "sikkim", "name": "Yumthang Valley", "queries": ["Yumthang Valley", "Yumthang rhododendron", "Sikkim rhododendron"] },
-
-  { "id": "port-blair", "adventure": "andaman", "name": "Port Blair", "queries": ["Port Blair coast", "Andaman Islands coast"] },
-  { "id": "havelock", "adventure": "andaman", "name": "Swaraj Dweep (Havelock)", "queries": ["Radhanagar Beach", "Havelock Island Andaman", "Elephant Beach Havelock"] },
-  { "id": "neil", "adventure": "andaman", "name": "Shaheed Dweep (Neil)", "queries": ["Neil Island Andaman", "Natural Bridge Neil Island"] },
-  { "id": "andaman-reef", "adventure": "andaman", "name": "Andaman reefs and mangroves", "queries": ["Andaman coral reef", "Andaman mangroves", "Andaman snorkeling"] },
-
-  { "id": "kargil", "adventure": "zanskar", "name": "Kargil and Suru Valley", "queries": ["Suru Valley", "Kargil Ladakh", "Nun Kun"] },
-  { "id": "rangdum", "adventure": "zanskar", "name": "Rangdum", "queries": ["Rangdum Monastery", "Rangdum"] },
-  { "id": "pensi-la", "adventure": "zanskar", "name": "Pensi La", "queries": ["Pensi La", "Drang Drung Glacier"] },
-  { "id": "padum", "adventure": "zanskar", "name": "Padum and Zanskar", "queries": ["Zanskar valley", "Padum Zanskar", "Karsha Monastery", "Zanskar river"] }
+  {
+    "id": "chikmagalur",
+    "adventure": "western-ghats",
+    "name": "Chikmagalur coffee estates",
+    "queries": [
+      "Chikmagalur coffee plantation",
+      "Chikmagalur hills",
+      "Baba Budangiri"
+    ]
+  },
+  {
+    "id": "mullayanagiri",
+    "adventure": "western-ghats",
+    "name": "Mullayanagiri",
+    "queries": [
+      "Mullayanagiri",
+      "Mullayanagiri clouds"
+    ]
+  },
+  {
+    "id": "kudremukh",
+    "adventure": "western-ghats",
+    "name": "Kudremukh",
+    "queries": [
+      "Kudremukh",
+      "Kudremukh National Park",
+      "Kudremukh shola grassland"
+    ]
+  },
+  {
+    "id": "western-ghats",
+    "adventure": "western-ghats",
+    "name": "Western Ghats",
+    "queries": [
+      "Western Ghats Karnataka monsoon",
+      "Agumbe ghat",
+      "Charmadi ghat"
+    ]
+  },
+  {
+    "id": "dandeli",
+    "adventure": "western-ghats",
+    "name": "Dandeli and the Kali river",
+    "queries": [
+      "Dandeli",
+      "Kali river Dandeli",
+      "Dandeli rafting",
+      "Great hornbill Dandeli"
+    ]
+  },
+  {
+    "id": "leh",
+    "adventure": "ladakh",
+    "name": "Leh",
+    "queries": [
+      "Leh Palace",
+      "Leh Ladakh town",
+      "Shanti Stupa Leh"
+    ]
+  },
+  {
+    "id": "thiksey",
+    "adventure": "ladakh",
+    "name": "Thiksey Monastery",
+    "queries": [
+      "Thiksey Monastery",
+      "Hemis Monastery"
+    ]
+  },
+  {
+    "id": "khardung-la",
+    "adventure": "ladakh",
+    "name": "Khardung La",
+    "queries": [
+      "Khardung La",
+      "Khardung La road"
+    ]
+  },
+  {
+    "id": "nubra",
+    "adventure": "ladakh",
+    "name": "Nubra Valley",
+    "queries": [
+      "Nubra Valley",
+      "Hunder sand dunes",
+      "Diskit Monastery"
+    ]
+  },
+  {
+    "id": "pangong",
+    "adventure": "ladakh",
+    "name": "Pangong Tso",
+    "queries": [
+      "Pangong Tso",
+      "Pangong Lake"
+    ]
+  },
+  {
+    "id": "chang-la",
+    "adventure": "ladakh",
+    "name": "Chang La",
+    "queries": [
+      "Chang La",
+      "Chang La pass Ladakh"
+    ]
+  },
+  {
+    "id": "kaza",
+    "adventure": "spiti",
+    "name": "Kaza",
+    "queries": [
+      "Kaza Spiti",
+      "Spiti Valley"
+    ]
+  },
+  {
+    "id": "key-monastery",
+    "adventure": "spiti",
+    "name": "Key Monastery",
+    "queries": [
+      "Key Monastery",
+      "Kye Gompa"
+    ]
+  },
+  {
+    "id": "kibber",
+    "adventure": "spiti",
+    "name": "Kibber",
+    "queries": [
+      "Kibber village",
+      "Kibber Spiti"
+    ]
+  },
+  {
+    "id": "langza",
+    "adventure": "spiti",
+    "name": "Langza",
+    "queries": [
+      "Langza",
+      "Langza Buddha statue"
+    ]
+  },
+  {
+    "id": "manali",
+    "adventure": "himachal",
+    "name": "Manali",
+    "queries": [
+      "Manali Himachal mountains",
+      "Solang Valley",
+      "Rohtang Pass"
+    ]
+  },
+  {
+    "id": "atal-tunnel",
+    "adventure": "himachal",
+    "name": "Atal Tunnel",
+    "queries": [
+      "Atal Tunnel",
+      "Rohtang tunnel north portal"
+    ]
+  },
+  {
+    "id": "sissu",
+    "adventure": "himachal",
+    "name": "Sissu",
+    "queries": [
+      "Sissu Lahaul",
+      "Sissu waterfall",
+      "Lahaul valley"
+    ]
+  },
+  {
+    "id": "jispa",
+    "adventure": "himachal",
+    "name": "Jispa",
+    "queries": [
+      "Jispa",
+      "Bhaga river",
+      "Keylong"
+    ]
+  },
+  {
+    "id": "gangtok",
+    "adventure": "sikkim",
+    "name": "Gangtok",
+    "queries": [
+      "Gangtok Kanchenjunga",
+      "Gangtok"
+    ]
+  },
+  {
+    "id": "lachung",
+    "adventure": "sikkim",
+    "name": "Lachung",
+    "queries": [
+      "Lachung",
+      "Lachung village Sikkim"
+    ]
+  },
+  {
+    "id": "yumthang",
+    "adventure": "sikkim",
+    "name": "Yumthang Valley",
+    "queries": [
+      "Yumthang Valley",
+      "Yumthang rhododendron",
+      "Sikkim rhododendron"
+    ]
+  },
+  {
+    "id": "port-blair",
+    "adventure": "andaman",
+    "name": "Port Blair",
+    "queries": [
+      "Port Blair coast",
+      "Andaman Islands coast"
+    ]
+  },
+  {
+    "id": "havelock",
+    "adventure": "andaman",
+    "name": "Swaraj Dweep (Havelock)",
+    "queries": [
+      "Radhanagar Beach",
+      "Havelock Island Andaman",
+      "Elephant Beach Havelock"
+    ]
+  },
+  {
+    "id": "neil",
+    "adventure": "andaman",
+    "name": "Shaheed Dweep (Neil)",
+    "queries": [
+      "Neil Island Andaman",
+      "Natural Bridge Neil Island"
+    ]
+  },
+  {
+    "id": "andaman-reef",
+    "adventure": "andaman",
+    "name": "Andaman reefs and mangroves",
+    "queries": [
+      "Andaman coral reef",
+      "Andaman mangroves",
+      "Andaman snorkeling"
+    ]
+  },
+  {
+    "id": "kargil",
+    "adventure": "zanskar",
+    "name": "Kargil and Suru Valley",
+    "queries": [
+      "Suru Valley",
+      "Kargil Ladakh",
+      "Nun Kun"
+    ]
+  },
+  {
+    "id": "rangdum",
+    "adventure": "zanskar",
+    "name": "Rangdum",
+    "queries": [
+      "Rangdum Monastery",
+      "Rangdum"
+    ]
+  },
+  {
+    "id": "pensi-la",
+    "adventure": "zanskar",
+    "name": "Pensi La",
+    "queries": [
+      "Pensi La",
+      "Drang Drung Glacier"
+    ]
+  },
+  {
+    "id": "padum",
+    "adventure": "zanskar",
+    "name": "Padum and Zanskar",
+    "queries": [
+      "Zanskar valley",
+      "Padum Zanskar",
+      "Karsha Monastery",
+      "Zanskar river"
+    ]
+  },
+  {
+    "id": "kochi",
+    "adventure": "kerala",
+    "name": "Fort Kochi",
+    "queries": [
+      "Chinese fishing nets Kochi",
+      "Fort Kochi"
+    ]
+  },
+  {
+    "id": "alappuzha",
+    "adventure": "kerala",
+    "name": "Alappuzha backwaters",
+    "queries": [
+      "Alappuzha backwaters",
+      "Kerala backwaters canal",
+      "Kerala backwaters near Nedumudy",
+      "Kerala houseboat"
+    ]
+  },
+  {
+    "id": "munroe-island",
+    "adventure": "kerala",
+    "name": "Munroe Island",
+    "queries": [
+      "Munroe Island",
+      "Munroe Thuruthu",
+      "Ashtamudi lake"
+    ]
+  },
+  {
+    "id": "kerala-kayak",
+    "adventure": "kerala",
+    "name": "Kayaking in Kerala",
+    "queries": [
+      "Tripjodi Kayaking",
+      "kayaking Kerala",
+      "canoe Kerala backwaters"
+    ]
+  },
+  {
+    "id": "equipment",
+    "adventure": "_gear",
+    "name": "Equipment",
+    "queries": [
+      "Royal Enfield Himalayan 450",
+      "Royal Enfield Classic 350",
+      "Rockrider540s",
+      "sea kayak guided tour",
+      "Sea Kayak",
+      "tent camp Ladakh",
+      "campfire night mountains",
+      "expedition tent Himalaya"
+    ]
+  }
 ]

@@ -5,6 +5,7 @@ import { ADVENTURES, CATEGORIES, getAdventure, type Adventure, type Day } from '
 import { CategoryChip, MediaView, SpotsBadge } from '@/components/AdventureCard';
 import { Gallery } from '@/components/Gallery';
 import { RegisterInterest } from '@/components/RegisterInterest';
+import { Extras, TakenCareOf, choosableItems } from '@/components/Equipment';
 import { CardRail } from '@/sections/Adventures';
 import { Reveal, useParallax } from '@/motion';
 import { CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
@@ -17,6 +18,12 @@ export function AdventurePage() {
   const { slug = '' } = useParams();
   const adventure = getAdventure(slug);
   if (!adventure) return <NotFoundPage />;
+  return <AdventureDetail key={adventure.slug} adventure={adventure} />;
+}
+
+function AdventureDetail({ adventure }: { adventure: Adventure }) {
+  // Chosen motorbike / bicycle, shared by the equipment chooser and the form.
+  const [choice, setChoice] = useState<string | null>(() => choosableItems(adventure)[0]?.id ?? null);
 
   const related = ADVENTURES.filter((a) => a.slug !== adventure.slug).sort(
     (a, b) => Number(b.category === adventure.category) - Number(a.category === adventure.category),
@@ -26,12 +33,14 @@ export function AdventurePage() {
     <>
       <Banner adventure={adventure} />
       <Overview adventure={adventure} />
+      <TakenCareOf adventure={adventure} choice={choice} onChoose={setChoice} />
       <Timeline adventure={adventure} />
+      <Extras adventure={adventure} />
       <Suspense fallback={<div data-surface="light" className="h-[900px] bg-white" />}>
         <RouteMap adventure={adventure} />
       </Suspense>
       <Gallery photos={adventure.gallery} title={`${adventure.place}, up close.`} />
-      <RegisterInterest adventure={adventure} />
+      <RegisterInterest adventure={adventure} choice={choice} onChoose={setChoice} />
       <section data-surface="light" className={`bg-white ${INK_LIGHT} py-24 md:py-32`}>
         <CardRail adventures={related} header={<h2 className={SECTION_TITLE}>More adventures.</h2>} />
       </section>

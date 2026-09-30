@@ -1,4 +1,4 @@
-import PHOTOS from './photos.json';
+import PHOTOS from './photos.json' with { type: 'json' };
 
 /** The photo library. Add photos with `npm run images:index` (see scripts/images/README.md). */
 export type Photo = {

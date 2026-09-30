@@ -2,6 +2,8 @@ import { useState, type FormEvent } from 'react';
 import { Check } from 'lucide-react';
 import type { Adventure } from '@/data/adventures';
 import { SpotsBadge, SpotsMeter } from '@/components/AdventureCard';
+import { choosableItems } from '@/components/Equipment';
+import { EQUIPMENT } from '@/data/equipment';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
 
 const field =
@@ -12,7 +14,17 @@ const field =
  * page state. Wire `onSubmit` to an API (e.g. a Vercel function or a form service)
  * before launch.
  */
-export function RegisterInterest({ adventure: a }: { adventure: Adventure }) {
+export function RegisterInterest({
+  adventure: a,
+  choice,
+  onChoose,
+}: {
+  adventure: Adventure;
+  choice: string | null;
+  onChoose: (id: string) => void;
+}) {
+  const bikes = choosableItems(a);
+  const hasGear = a.equipment.includes('riding-gear');
   const [submitted, setSubmitted] = useState<string | null>(null);
   const soldOut = a.spotsLeft === 0;
 
@@ -96,6 +108,32 @@ export function RegisterInterest({ adventure: a }: { adventure: Adventure }) {
                   <option>A private trip</option>
                 </select>
               </label>
+              {bikes.length > 0 && (
+                <label className={hasGear ? '' : 'sm:col-span-2'}>
+                  <span className="mb-2 block text-sm font-medium">{bikes[0].kind === 'bicycle' ? 'Bike' : 'Motorbike'}</span>
+                  <select
+                    name="equipment"
+                    value={choice ?? ''}
+                    onChange={(e) => onChoose(e.target.value)}
+                    className={field}
+                  >
+                    {bikes.map((b) => (
+                      <option key={b.id} value={b.id}>
+                        {b.name} · {b.price}
+                      </option>
+                    ))}
+                    <option value="own">I’ll bring my own</option>
+                  </select>
+                </label>
+              )}
+              {hasGear && (
+                <label className="flex items-center gap-3 self-end rounded-xl border border-[#d2d2d7] px-4 py-3.5">
+                  <input name="gear" type="checkbox" defaultChecked className="h-5 w-5 accent-[#1d1d1f]" />
+                  <span className="text-[15px]">
+                    Add {EQUIPMENT['riding-gear'].name.toLowerCase()} · {EQUIPMENT['riding-gear'].price}
+                  </span>
+                </label>
+              )}
               <label className="sm:col-span-2">
                 <span className="mb-2 block text-sm font-medium">Anything we should know? (optional)</span>
                 <textarea name="message" rows={3} className={`${field} resize-none`} />
