@@ -1,79 +1,38 @@
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import {
-  ADVENTURES,
-  CATEGORIES,
-  SEASONS,
-  ZONES,
-  type CategoryId,
-  type SeasonId,
-  type ZoneId,
-} from '@/data/adventures';
+import { ZONES, type ZoneId } from '@/data/adventures';
 import { AdventureCard } from '@/components/AdventureCard';
+import { ActiveFilters, FilterBar, filterAdventures, useFilters } from '@/components/AdventureFilters';
 import { Reveal } from '@/motion';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
 
-type FilterKey = 'type' | 'region' | 'season';
-
 /** Hub: every adventure, filterable by what / where / when (mirrors the IA). */
 export function AdventuresPage() {
-  const [params, setParams] = useSearchParams();
-  const type = params.get('type') as CategoryId | null;
-  const region = params.get('region') as ZoneId | null;
-  const season = params.get('season') as SeasonId | null;
-
-  const results = ADVENTURES.filter(
-    (a) => (!type || a.category === type) && (!region || a.zone === region) && (!season || a.seasons.includes(season)),
-  );
-
-  const set = (key: FilterKey, value: string | null) => {
-    const next = new URLSearchParams(params);
-    if (value) next.set(key, value);
-    else next.delete(key);
-    setParams(next, { replace: true });
-  };
-
-  const groups: { key: FilterKey; label: string; value: string | null; options: [string, string][] }[] = [
-    { key: 'type', label: 'Activity', value: type, options: Object.entries(CATEGORIES).map(([k, v]) => [k, v.label]) },
-    { key: 'region', label: 'Region', value: region, options: Object.entries(ZONES).map(([k, v]) => [k, v.label]) },
-    { key: 'season', label: 'When', value: season, options: Object.entries(SEASONS).map(([k, v]) => [k, v.label]) },
-  ];
+  const [filters, setFilters] = useFilters();
+  const results = filterAdventures(filters);
 
   return (
     <>
-      <section data-surface="light" className={`bg-white ${INK_LIGHT} pt-32 md:pt-40 pb-24`}>
+      <section data-surface="light" className={`bg-white ${INK_LIGHT} pt-32 md:pt-40 pb-10`}>
         <div className={CONTAINER}>
           <Reveal>
             <h1 className="text-[clamp(2.75rem,6.5vw,6rem)] font-semibold leading-[1.02] tracking-[-0.03em]">
               Adventures.
             </h1>
             <p className={`mt-5 max-w-2xl text-lg md:text-xl ${MUTED_LIGHT}`}>
-              Small-group journeys across India, designed with the people who live there. Filter by what you want to
-              do, where, and when.
+              Small-group journeys across India, designed with the people who live there.
             </p>
           </Reveal>
+        </div>
+      </section>
 
-          <div className="mt-12 space-y-4">
-            {groups.map((g) => (
-              <div key={g.key} className="flex flex-wrap items-center gap-2">
-                <span className={`w-20 shrink-0 text-sm font-medium ${MUTED_LIGHT}`}>{g.label}</span>
-                <Chip active={!g.value} onClick={() => set(g.key, null)}>
-                  All
-                </Chip>
-                {g.options.map(([id, label]) => (
-                  <Chip key={id} active={g.value === id} onClick={() => set(g.key, g.value === id ? null : id)}>
-                    {label}
-                  </Chip>
-                ))}
-              </div>
-            ))}
-          </div>
+      <FilterBar filters={filters} onChange={setFilters} />
 
-          <p className={`mt-10 text-sm ${MUTED_LIGHT}`}>
-            {results.length} {results.length === 1 ? 'adventure' : 'adventures'}
-          </p>
+      <section data-surface="light" className={`bg-white ${INK_LIGHT} pb-24 pt-8`}>
+        <div className={CONTAINER}>
+          <ActiveFilters filters={filters} count={results.length} onChange={setFilters} />
           {results.length > 0 ? (
-            <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {results.map((a, i) => (
                 <Reveal key={a.slug} delay={(i % 3) * 90}>
                   <AdventureCard adventure={a} />
@@ -81,11 +40,11 @@ export function AdventuresPage() {
               ))}
             </div>
           ) : (
-            <div className={`mt-5 rounded-[28px] ${BG_SUBTLE} p-12 text-center`}>
+            <div className={`mt-6 rounded-[28px] ${BG_SUBTLE} p-12 text-center`}>
               <p className="text-2xl font-semibold">Nothing matches that combination yet.</p>
               <button
                 type="button"
-                onClick={() => setParams({}, { replace: true })}
+                onClick={() => setFilters({ type: null, region: null, season: null, level: null, open: false })}
                 className="mt-4 text-[17px] font-medium text-[#0066cc] hover:underline"
               >
                 Clear filters
@@ -126,20 +85,5 @@ export function AdventuresPage() {
         </div>
       </section>
     </>
-  );
-}
-
-function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: string }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={active}
-      className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-        active ? 'bg-[#1d1d1f] text-white' : 'bg-[#f5f5f7] text-[#1d1d1f] hover:bg-[#e8e8ed]'
-      }`}
-    >
-      {children}
-    </button>
   );
 }
