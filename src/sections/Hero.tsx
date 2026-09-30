@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { ArrowDown, ArrowRight, ChevronUp } from 'lucide-react';
 import { useVideoScrub } from '@/useVideoScrub';
 import { EASE_OUT } from '@/ui';
-import { EdgeFade } from '@/components/Surface';
 
 const VIDEO_SRC = '/hero.mp4';
 
@@ -78,7 +77,6 @@ export function Hero() {
 
   return (
     <div ref={containerRef} data-surface="dark" className="relative h-[500vh] bg-black">
-      <EdgeFade to="white" height={220} />
       <div className="sticky top-0 w-full h-screen overflow-hidden">
         <video
           ref={videoRef}

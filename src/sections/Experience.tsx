@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Play, X } from 'lucide-react';
 import { SECTION_TITLE } from '@/ui';
-import { EdgeFade } from '@/components/Surface';
 
 const FILM_SRC = '/hero.mp4';
 
@@ -23,8 +22,6 @@ export function Experience() {
     <section id="experience" data-surface="dark" className="relative h-screen min-h-[560px] overflow-hidden bg-black text-white">
       <img src="/images/experience.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/20" />
-      <EdgeFade to="white" edge="top" height={160} />
-      <EdgeFade to="subtle" height={160} />
 
       <div className="relative flex h-full flex-col items-center justify-end px-6 pb-20 md:pb-28 text-center">
         <h2 className={SECTION_TITLE} style={{ textShadow: '0 2px 24px rgba(0,0,0,0.35)' }}>

@@ -1,15 +1,19 @@
 import { PHOTO_LIBRARY } from '@/data/photos';
+import { VIDEO_LIBRARY } from '@/data/videos';
 import { Reveal } from '@/motion';
 import { CONTAINER, INK_LIGHT, MUTED_LIGHT } from '@/ui';
 
 /** Attribution for every photo in the library (required by their CC licences). */
 export function CreditsPage() {
-  const photos = Object.values(PHOTO_LIBRARY);
+  const photos = [
+    ...Object.values(PHOTO_LIBRARY),
+    ...Object.values(VIDEO_LIBRARY).map((v) => ({ ...v, file: v.poster, caption: `${v.caption} (video)` })),
+  ];
   return (
     <section data-surface="light" className={`bg-white ${INK_LIGHT} pt-32 md:pt-40 pb-24`}>
       <div className={CONTAINER}>
         <Reveal>
-          <h1 className="text-[clamp(2.75rem,6vw,5rem)] font-semibold leading-[1.02] tracking-[-0.03em]">Photo credits.</h1>
+          <h1 className="text-[clamp(2.75rem,6vw,5rem)] font-semibold leading-[1.02] tracking-[-0.03em]">Photo and video credits.</h1>
           <p className={`mt-5 max-w-2xl text-lg ${MUTED_LIGHT}`}>
             Thank you to the photographers whose work shows these places as they really are. Photos are used under the
             licences listed and have been resized.

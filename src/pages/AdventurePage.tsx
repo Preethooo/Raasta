@@ -10,7 +10,8 @@ import { CardRail } from '@/sections/Adventures';
 import { Reveal, useParallax } from '@/motion';
 import { CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import { DarkSection, EdgeFade } from '@/components/Surface';
+import { DarkSection } from '@/components/Surface';
+import { ScrollVideo } from '@/components/ScrollVideo';
 
 // The map library is heavy; only load it on adventure pages.
 const RouteMap = lazy(() => import('@/components/RouteMap').then((m) => ({ default: m.RouteMap })));
@@ -65,7 +66,6 @@ function Banner({ adventure: a }: { adventure: Adventure }) {
         <MediaView media={a.banner} className="h-full w-full" />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/30" />
-      <EdgeFade to="white" height={140} />
 
       <div className={`${CONTAINER} relative flex h-full flex-col justify-end pb-14 md:pb-20`}>
         <Reveal>
@@ -180,7 +180,7 @@ function Timeline({ adventure: a }: { adventure: Adventure }) {
   }, []);
 
   return (
-    <DarkSection id="itinerary" from="subtle" to="dark" className="scroll-mt-14 py-24 md:py-40">
+    <DarkSection id="itinerary" className="scroll-mt-14 py-24 md:py-40">
       <div className={CONTAINER}>
         <Reveal>
           <p className="text-sm font-semibold text-white/55">Itinerary</p>
@@ -220,7 +220,11 @@ function DayRow({ day, index, reached }: { day: Day; index: number; reached: boo
       <Reveal className={flip ? 'md:order-2' : ''}>
         <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-white/5">
           <div ref={mediaRef} className="absolute inset-x-0 -top-[12%] h-[124%]">
-            <MediaView media={day.media} className="h-full w-full" />
+            {day.media.type === 'video' ? (
+              <ScrollVideo src={day.media.src} poster={day.media.poster} className="h-full w-full" />
+            ) : (
+              <MediaView media={day.media} className="h-full w-full" />
+            )}
           </div>
         </div>
       </Reveal>

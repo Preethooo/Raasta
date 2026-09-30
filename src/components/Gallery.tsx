@@ -27,7 +27,7 @@ export function Gallery({ photos: ids, title = 'Gallery.' }: { photos: string[];
   }, [open, srcs.length]);
 
   return (
-    <DarkSection id="gallery" from="white" to="subtle" className="py-24 md:py-32">
+    <DarkSection id="gallery" className="py-24 md:py-32">
       <div className={CONTAINER}>
         <p className="text-sm font-semibold text-white/55">Gallery</p>
         <h2 className={`${SECTION_TITLE} mt-2`}>{title}</h2>

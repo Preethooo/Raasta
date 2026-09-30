@@ -4,7 +4,7 @@ import { getPhoto } from '@/data/photos';
 import { Logo } from '@/components/Logo';
 import { useParallax, Reveal } from '@/motion';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
-import { DarkSection, EdgeFade } from '@/components/Surface';
+import { DarkSection } from '@/components/Surface';
 
 /*
  * Structure follows Black Tomato's About page: hero line, who we are, origin story,
@@ -56,7 +56,6 @@ export function AboutPage() {
           <img src={hero.file} alt={hero.caption} className="h-full w-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30" />
-        <EdgeFade to="white" height={140} />
         <div className={`${CONTAINER} relative flex h-full flex-col justify-end pb-16 md:pb-24`}>
           <Reveal>
             <p className="text-sm font-semibold text-white/70">About Raasta</p>
@@ -97,7 +96,7 @@ export function AboutPage() {
       </section>
 
       {/* Origin story */}
-      <DarkSection from="white" to="subtle" className="py-24 md:py-36">
+      <DarkSection className="py-24 md:py-36">
         <div className={`${CONTAINER} grid items-center gap-12 lg:grid-cols-2 lg:gap-20`}>
           <Reveal>
             <p className="text-sm font-semibold text-accent">How it started</p>

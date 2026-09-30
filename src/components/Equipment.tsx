@@ -193,7 +193,7 @@ function EquipmentCard({
 export function Extras({ adventure: a }: { adventure: Adventure }) {
   if (!a.extras.length) return null;
   return (
-    <DarkSection from="dark" to="white" className="pb-24 md:pb-32">
+    <DarkSection className="pb-24 md:pb-32">
       <div className={CONTAINER}>
         <Reveal>
           <p className="inline-flex items-center gap-2 text-sm font-semibold text-accent">

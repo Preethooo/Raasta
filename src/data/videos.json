@@ -1,0 +1,145 @@
+{
+  "chikmagalur-road": {
+    "id": "chikmagalur-road",
+    "file": "/videos/days/chikmagalur-road.mp4",
+    "poster": "/videos/days/chikmagalur-road.webp",
+    "caption": "The road into Chikmagalur",
+    "author": "L. Shyamal",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kadur_Chikmagalur_road_20210731.webm"
+  },
+  "karnataka-waterfall": {
+    "id": "karnataka-waterfall",
+    "file": "/videos/days/karnataka-waterfall.mp4",
+    "poster": "/videos/days/karnataka-waterfall.webp",
+    "caption": "A forest waterfall in Karnataka",
+    "author": "Rishi Muni",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Godachinmalki_waterfalls_video.webm"
+  },
+  "coracle-ride": {
+    "id": "coracle-ride",
+    "file": "/videos/days/coracle-ride.mp4",
+    "poster": "/videos/days/coracle-ride.webp",
+    "caption": "A coracle ride on the Kaveri at Hogenakkal",
+    "author": "Thamizhpparithi Maari",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coracle_riding_in_Hokenakal_1.ogv"
+  },
+  "leh-from-tsemo": {
+    "id": "leh-from-tsemo",
+    "file": "/videos/days/leh-from-tsemo.mp4",
+    "poster": "/videos/days/leh-from-tsemo.webp",
+    "caption": "Leh from Tsemo hill",
+    "author": "Ankushgupta1987",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Short_Video_of_Leh_City_from_Tsemo_Hill.webm"
+  },
+  "indus-zanskar-confluence": {
+    "id": "indus-zanskar-confluence",
+    "file": "/videos/days/indus-zanskar-confluence.mp4",
+    "poster": "/videos/days/indus-zanskar-confluence.webp",
+    "caption": "The Indus and Zanskar rivers meeting",
+    "author": "Yann Forget",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_of_Indus_and_Zanskar_rivers_confluence.webm"
+  },
+  "pangong-panorama": {
+    "id": "pangong-panorama",
+    "file": "/videos/days/pangong-panorama.mp4",
+    "poster": "/videos/days/pangong-panorama.webp",
+    "caption": "Pangong Tso",
+    "author": "Yann Forget",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panorama_of_Pangong_lake,_Ladakh,_2.webm"
+  },
+  "rohtang-road": {
+    "id": "rohtang-road",
+    "file": "/videos/days/rohtang-road.mp4",
+    "poster": "/videos/days/rohtang-road.webp",
+    "caption": "Riding through the snow on the Rohtang road",
+    "author": "Hai Long Nguyen",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manali-_KeyLong_on_bike,_2012.webm"
+  },
+  "lahaul-pastures": {
+    "id": "lahaul-pastures",
+    "file": "/videos/days/lahaul-pastures.mp4",
+    "poster": "/videos/days/lahaul-pastures.webp",
+    "caption": "Alpine pastures in Lahaul",
+    "author": "Highland.dogs",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayan_alpine_pastures.webm"
+  },
+  "namok-village": {
+    "id": "namok-village",
+    "file": "/videos/days/namok-village.mp4",
+    "poster": "/videos/days/namok-village.webp",
+    "caption": "Namok village, North Sikkim",
+    "author": "Biswas Dibyendu",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Namok_Monastery_at_Namok_Village_in_North_Sikkim,_India_01.webm"
+  },
+  "alappuzha-canal": {
+    "id": "alappuzha-canal",
+    "file": "/videos/days/alappuzha-canal.mp4",
+    "poster": "/videos/days/alappuzha-canal.webp",
+    "caption": "A boat on the Alappuzha canals",
+    "author": "Subhashish Panigrahi",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_boat_sailing_in_Alappuzha_canal,_Alappuzha,_Kerala.webm"
+  },
+  "havelock-mangroves": {
+    "id": "havelock-mangroves",
+    "file": "/videos/days/havelock-mangroves.mp4",
+    "poster": "/videos/days/havelock-mangroves.webp",
+    "caption": "Into the mangroves, Swaraj Dweep",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ride_into_Mangrove_Forest,_Havelock_Island_vrvbaan042k24.webm"
+  },
+  "andaman-reef": {
+    "id": "andaman-reef",
+    "file": "/videos/days/andaman-reef.mp4",
+    "poster": "/videos/days/andaman-reef.webp",
+    "caption": "Reef fish in the Andaman Sea",
+    "author": "Nicor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abudefduf_in_Andaman_Sea_01.ogv"
+  },
+  "kargil-spring": {
+    "id": "kargil-spring",
+    "file": "/videos/days/kargil-spring.mp4",
+    "poster": "/videos/days/kargil-spring.webp",
+    "caption": "Spring in Kargil",
+    "author": "FAYAZ SHUJA",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spring_in_Kargil.webm"
+  }
+}
