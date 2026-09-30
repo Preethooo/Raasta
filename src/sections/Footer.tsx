@@ -1,18 +1,24 @@
+import { Link } from 'react-router-dom';
+import { CATEGORIES, ZONES, type CategoryId, type ZoneId } from '@/data/adventures';
+import { Logo } from '@/components/Logo';
 import { BG_SUBTLE, CONTAINER, MUTED_LIGHT } from '@/ui';
 
-// Placeholder links until the pages exist.
-const COLUMNS = [
+const COLUMNS: { heading: string; links: { to: string; label: string }[] }[] = [
   {
-    heading: 'Adventures',
-    links: ['Ladakh', 'Spiti Valley', 'Himachal', 'Sikkim', 'Andaman Islands', 'Zanskar'],
+    heading: 'By activity',
+    links: (Object.keys(CATEGORIES) as CategoryId[]).map((id) => ({ to: `/adventures/type/${id}`, label: CATEGORIES[id].label })),
   },
   {
-    heading: 'Travel with us',
-    links: ['How it works', 'Why Raasta', 'Plan a custom trip', 'FAQs'],
+    heading: 'By region',
+    links: (Object.keys(ZONES) as ZoneId[]).map((id) => ({ to: `/adventures/region/${id}`, label: ZONES[id].label })),
   },
   {
-    heading: 'Company',
-    links: ['About', 'Journal', 'Careers', 'Contact'],
+    heading: 'Raasta',
+    links: [
+      { to: '/', label: 'Home' },
+      { to: '/adventures', label: 'All adventures' },
+      { to: '/about', label: 'About us' },
+    ],
   },
 ];
 
@@ -21,8 +27,8 @@ export function Footer() {
     <footer data-surface="light" className={`${BG_SUBTLE} ${MUTED_LIGHT} text-xs`}>
       <div className={`${CONTAINER} py-12`}>
         <div className="border-b border-[#d2d2d7] pb-6">
-          <p className="text-[#1d1d1f] text-sm font-semibold">Raasta</p>
-          <p className="mt-1">Thoughtfully crafted journeys. Deeply local experiences.</p>
+          <Logo className="text-[#1d1d1f]" />
+          <p className="mt-3">Thoughtfully crafted journeys. Deeply local experiences.</p>
         </div>
 
         <div className="grid grid-cols-2 gap-8 py-8 sm:grid-cols-3">
@@ -31,10 +37,10 @@ export function Footer() {
               <h3 className="font-semibold text-[#1d1d1f]">{col.heading}</h3>
               <ul className="mt-3 space-y-2.5">
                 {col.links.map((l) => (
-                  <li key={l}>
-                    <a href="#" className="hover:text-[#1d1d1f] hover:underline">
-                      {l}
-                    </a>
+                  <li key={l.to}>
+                    <Link to={l.to} className="hover:text-[#1d1d1f] hover:underline">
+                      {l.label}
+                    </Link>
                   </li>
                 ))}
               </ul>

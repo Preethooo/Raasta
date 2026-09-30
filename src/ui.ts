@@ -12,3 +12,6 @@ export const SECTION_TITLE = 'font-semibold leading-[1.1] tracking-[-0.02em] tex
 export const INK_LIGHT = 'text-[#1d1d1f]';
 export const MUTED_LIGHT = 'text-[#6e6e73]';
 export const BG_SUBTLE = 'bg-[#f5f5f7]';
+
+/** Brand accent: route lines, "filling fast", progress. */
+export const ACCENT = '#ff5a1f';
