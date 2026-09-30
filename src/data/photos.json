@@ -1165,6 +1165,17 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spiti_Gorge_Kaza_Losar_Jun18_D72_7818.jpg"
   },
+  "team/preetham-lawrence": {
+    "id": "team/preetham-lawrence",
+    "place": "team",
+    "file": "/images/places/team/preetham-lawrence.webp",
+    "caption": "Preetham Lawrence, founder of Raasta",
+    "author": "Raasta",
+    "license": "\u00a9 Raasta",
+    "licenseUrl": "",
+    "source": "Raasta",
+    "sourceUrl": ""
+  },
   "thiksey/thiksey-monastery-ladakh-07": {
     "id": "thiksey/thiksey-monastery-ladakh-07",
     "place": "thiksey",

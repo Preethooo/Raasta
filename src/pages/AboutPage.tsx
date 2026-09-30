@@ -38,6 +38,7 @@ const FOUNDERS = [
   {
     name: 'Preetham Lawrence',
     role: 'Founder',
+    photo: 'team/preetham-lawrence' as string | undefined,
     bio: 'Grew up on India’s roads and still spends every spare weekend on them. Started Raasta to share the routes, the people and the plates of food that never make it into the guidebooks.',
   },
 ];
@@ -171,7 +172,18 @@ export function AboutPage() {
             {FOUNDERS.map((f) => (
               <Reveal key={f.name}>
                 <article className="h-full overflow-hidden rounded-[28px] bg-white">
-                  <PhotoPlaceholder />
+                  {f.photo ? (
+                    <div className="aspect-[4/5] overflow-hidden bg-black">
+                      <img
+                        src={getPhoto(f.photo).file}
+                        alt={getPhoto(f.photo).caption}
+                        loading="lazy"
+                        className="h-full w-full object-cover object-top"
+                      />
+                    </div>
+                  ) : (
+                    <PhotoPlaceholder />
+                  )}
                   <div className="p-7">
                     <h3 className="text-2xl font-semibold tracking-[-0.01em]">{f.name}</h3>
                     <p className="mt-1 text-sm font-semibold text-accent">{f.role}</p>
