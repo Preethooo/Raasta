@@ -1,4 +1,5 @@
 import { Bike, Motorbike, Mountain, Tent, Trees, Waves, type LucideIcon } from 'lucide-react';
+import { photoSrc } from '@/data/photos';
 
 /*
  * Placeholder catalogue. Categories follow what Indian adventure operators commonly
@@ -13,37 +14,37 @@ export const CATEGORIES: Record<CategoryId, { label: string; icon: LucideIcon; t
     label: 'Motorbiking',
     icon: Motorbike,
     tagline: 'Ride India’s great roads with a lead rider, a support vehicle and nothing to worry about but the next bend.',
-    image: '/images/rider-dust.jpg',
+    image: photoSrc('khardung-la/manfred-uhde-khardung-la-road'),
   },
   cycling: {
     label: 'Cycling',
     icon: Bike,
     tagline: 'Supported tours on quiet roads, with your luggage carried and every climb earned.',
-    image: '/images/himachal.jpg',
+    image: photoSrc('keylong/view-from-shashur-monastery-keylong'),
   },
   trekking: {
     label: 'Trekking & hiking',
     icon: Mountain,
     tagline: 'Walk ancient footpaths between villages, with local guides who grew up on them.',
-    image: '/images/spiti.jpg',
+    image: photoSrc('kudremukh/trekking-trail-of-netravati-peak-from-the-summit-zoomed-in'),
   },
   nature: {
     label: 'Nature & wildlife',
     icon: Trees,
     tagline: 'Slow journeys into forests, valleys and sanctuaries with naturalists who know every call.',
-    image: '/images/sikkim.jpg',
+    image: photoSrc('dandeli/hornbill-at-dandeli'),
   },
   water: {
     label: 'Water adventures',
     icon: Waves,
     tagline: 'Kayak, raft and snorkel India’s rivers and reefs with experienced water guides.',
-    image: '/images/andaman.jpg',
+    image: photoSrc('dandeli/dandeli-river-rafting'),
   },
   camping: {
     label: 'Camping & expeditions',
     icon: Tent,
     tagline: 'Remote, expedition-style trips for those who want no signal and a sky full of stars.',
-    image: '/images/zanskar.jpg',
+    image: photoSrc('rangdum/rangdum-village-sheep'),
   },
 };
 
@@ -53,35 +54,35 @@ export const ZONES: Record<ZoneId, { label: string; blurb: string; image: string
   himalaya: {
     label: 'The Himalaya',
     blurb: 'High passes, cold deserts and monastery villages across Ladakh, Zanskar, Spiti and Lahaul.',
-    image: '/images/cloud-peaks.jpg',
+    image: photoSrc('nubra/sand-dunes-and-poplars-nubra-valley-ladakh'),
   },
   northeast: {
     label: 'The Northeast',
     blurb: 'Rhododendron forests, living root bridges and quiet mountain kingdoms.',
-    image: '/images/sikkim.jpg',
+    image: photoSrc('yumthang/valley-of-rhododendron-flowered-trees'),
   },
   south: {
     label: 'South India',
     blurb: 'Coffee country, rainforest ghats and rivers running to the Arabian Sea.',
-    image: '/images/rider-valley.jpg',
+    image: photoSrc('kudremukh/trekking-trail-of-netravati-peak-from-the-summit'),
   },
   islands: {
     label: 'The Islands',
     blurb: 'Reefs, mangroves and empty beaches in the Andaman Sea.',
-    image: '/images/andaman.jpg',
+    image: photoSrc('havelock/havelock-island-ethereal-mangrove-tree-andaman-islands'),
   },
 };
 
 export type SeasonId = 'spring' | 'summer' | 'autumn' | 'winter';
 
 export const SEASONS: Record<SeasonId, { label: string; months: string; image: string }> = {
-  spring: { label: 'Spring', months: 'March to May', image: '/images/sikkim.jpg' },
-  summer: { label: 'Summer', months: 'June to August', image: '/images/ladakh.jpg' },
-  autumn: { label: 'Autumn', months: 'September to November', image: '/images/spiti.jpg' },
-  winter: { label: 'Winter', months: 'December to February', image: '/images/andaman.jpg' },
+  spring: { label: 'Spring', months: 'March to May', image: photoSrc('yumthang/rhododendron-glaucophyllum-shingba-rs-ajtj') },
+  summer: { label: 'Summer', months: 'June to August', image: photoSrc('pangong/late-afternoon-at-the-pangong-tso') },
+  autumn: { label: 'Autumn', months: 'September to November', image: photoSrc('lahaul/bhaga-gemur-downstream-lahaul') },
+  winter: { label: 'Winter', months: 'December to February', image: photoSrc('havelock/radhanagar-beach-havelock-vrvbaan042k24') },
 };
 
-export type Media = { type: 'image'; src: string } | { type: 'video'; src: string; poster?: string };
+export type Media = { type: 'image'; src: string; photoId?: string } | { type: 'video'; src: string; poster?: string };
 
 /** Longitude, latitude (GeoJSON order). */
 export type LngLat = [number, number];
@@ -124,8 +125,8 @@ export type Adventure = {
 /** Spots are "filling fast" once 30% or fewer remain. */
 export const isFillingFast = (a: Adventure) => a.spotsLeft > 0 && a.spotsLeft / a.groupSize <= 0.3;
 
-const img = (name: string): Media => ({ type: 'image', src: `/images/${name}.jpg` });
-const video = (src: string, poster: string): Media => ({ type: 'video', src, poster: `/images/${poster}.jpg` });
+/** Media from the photo library (src/data/photos.json), keeping its id for credits. */
+const pic = (id: string): Media => ({ type: 'image', src: photoSrc(id), photoId: id });
 
 export const ADVENTURES: Adventure[] = [
   {
@@ -144,8 +145,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '14 November 2026',
     groupSize: 12,
     spotsLeft: 3,
-    image: '/images/rider-valley.jpg',
-    banner: video('/hero.mp4', 'rider-valley'),
+    image: photoSrc('kudremukh/kudremukh'),
+    banner: pic('western-ghats/charmadi-ghat'),
     stops: [
       { name: 'Bangalore', note: 'Start · Day 1', coords: [77.5946, 12.9716] },
       { name: 'Chikmagalur', note: 'Western Ghats · Days 1–3', coords: [75.772, 13.3161] },
@@ -157,40 +158,49 @@ export const ADVENTURES: Adventure[] = [
         title: 'Out of the city, into coffee country',
         body: 'Briefing and bike checks at sunrise, then a 250 km ride west through Hassan to Chikmagalur. Lunch at a highway dhaba, evening walk through the estate you stay on.',
         highlights: ['250 km ride', 'Coffee estate homestay'],
-        media: video('/hero.mp4', 'wheel-close'),
+        media: pic('chikmagalur/baba-budangiri-chikmagalur-48'),
       },
       {
         title: 'Mullayanagiri at first light',
         body: 'An early ride up to Karnataka’s highest peak for sunrise above the clouds, followed by a slow afternoon learning how coffee goes from cherry to cup.',
         highlights: ['Sunrise summit', 'Coffee tasting'],
-        media: img('cloud-peaks'),
+        media: pic('mullayanagiri/hill-adjacent-to-mullayanagiri'),
       },
       {
         title: 'The Kudremukh loop',
         body: 'A full day of twisting ghat roads through shola forest and grassland, with swims in forest streams along the way.',
         highlights: ['180 km loop', 'Waterfall stop'],
-        media: img('road-aerial'),
+        media: pic('kudremukh/trekking-trail-of-netravati-peak-from-the-summit-zoomed-in'),
       },
       {
         title: 'North along the ghats to Dandeli',
         body: 'The longest ride of the trip, following the spine of the Western Ghats north to the Kali river. Arrive to a riverside camp and a fire.',
         highlights: ['300 km ride', 'Riverside camp'],
-        media: img('rider-dust'),
+        media: pic('western-ghats/agumbe-ghat'),
       },
       {
         title: 'Kali river day',
         body: 'White-water rafting in the morning, a guided forest walk with a local naturalist in the afternoon and hornbills at dusk.',
         highlights: ['Rafting', 'Birding walk'],
-        media: img('valley-river'),
+        media: pic('dandeli/dandeli-river-rafting'),
       },
       {
         title: 'Slow morning, long goodbye',
         body: 'Coracle ride at sunrise, a last breakfast together and a support-vehicle transfer back to Bangalore or on to Goa.',
         highlights: ['Coracle ride', 'Return transfer'],
-        media: video('/videos/clouds.mp4', 'cloud-sea'),
+        media: pic('dandeli/a-perfect-day-for-rafting'),
       },
     ],
-    gallery: ['rider-valley', 'road-aerial', 'cloud-peaks', 'valley-river', 'rider-dust', 'wheel-dust', 'dust-valley', 'cloud-sea'],
+    gallery: [
+      'dandeli/hornbill-at-dandeli',
+      'dandeli/dandeli-river-rafting-2',
+      'kudremukh/trekking-trail-on-netravati-peak',
+      'kudremukh/kudremukh',
+      'mullayanagiri/mullayanagiri-chikmagalur-district-of-karnataka',
+      'chikmagalur/baba-budangiri-chikmagalur-44',
+      'chikmagalur/baba-budangiri-chikmagalur-37',
+      'dandeli/kad012-supa-dam-kali-river-near-dandeli',
+    ],
   },
   {
     slug: 'ladakh',
@@ -208,8 +218,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '6 June 2027',
     groupSize: 14,
     spotsLeft: 9,
-    image: '/images/ladakh.jpg',
-    banner: img('rider-rear'),
+    image: photoSrc('pangong/pangong-tso-in-eastern-ladakhchangthang'),
+    banner: pic('pangong/pangong-tso-ladakh-india'),
     stops: [
       { name: 'Leh', note: 'Start · Days 1–2', coords: [77.5771, 34.1526] },
       { name: 'Diskit', note: 'Nubra Valley · Days 3–4', coords: [77.562, 34.5539] },
@@ -217,14 +227,23 @@ export const ADVENTURES: Adventure[] = [
     ],
     legModes: ['road', 'road'],
     days: [
-      { title: 'Arrive and acclimatise', body: 'Land in Leh, rest, and take a slow walk through the old town.', highlights: ['Rest day', 'Old town walk'], media: img('cloud-peaks') },
-      { title: 'Monasteries of the Indus', body: 'A short warm-up ride to Thiksey and Hemis to get used to the altitude.', highlights: ['80 km ride', 'Monastery visits'], media: img('rider-rear') },
-      { title: 'Khardung La', body: 'Climb to 5,359 m and drop into the Nubra Valley.', highlights: ['High pass', 'Desert camp'], media: img('ladakh') },
-      { title: 'Nubra at your own pace', body: 'Dunes, double-humped camels and a free afternoon.', highlights: ['Free afternoon'], media: img('dust-valley') },
-      { title: 'The Shyok road to Pangong', body: 'A remote river road to the lake, arriving for sunset.', highlights: ['160 km ride', 'Lakeside camp'], media: img('road-aerial') },
-      { title: 'Back to Leh', body: 'Over Chang La and home for a farewell dinner.', highlights: ['Chang La pass'], media: video('/hero.mp4', 'rider-dust') },
+      { title: 'Arrive and acclimatise', body: 'Land in Leh, rest, and take a slow walk through the old town.', highlights: ['Rest day', 'Old town walk'], media: pic('leh/leh-village-from-shanti-stupa-2') },
+      { title: 'Monasteries of the Indus', body: 'A short warm-up ride to Thiksey and Hemis to get used to the altitude.', highlights: ['80 km ride', 'Monastery visits'], media: pic('thiksey/thiksey-monastery-ladakh-07') },
+      { title: 'Khardung La', body: 'Climb to 5,359 m and drop into the Nubra Valley.', highlights: ['High pass', 'Desert camp'], media: pic('khardung-la/manfred-uhde-khardung-la-road') },
+      { title: 'Nubra at your own pace', body: 'Dunes, double-humped camels and a free afternoon.', highlights: ['Free afternoon'], media: pic('nubra/nubra-valley') },
+      { title: 'The Shyok road to Pangong', body: 'A remote river road to the lake, arriving for sunset.', highlights: ['160 km ride', 'Lakeside camp'], media: pic('pangong/late-afternoon-at-the-pangong-tso') },
+      { title: 'Back to Leh', body: 'Over Chang La and home for a farewell dinner.', highlights: ['Chang La pass'], media: pic('ladakh/ladakh-mountain') },
     ],
-    gallery: ['ladakh', 'rider-rear', 'road-aerial', 'dust-valley', 'cloud-peaks', 'wheel-close'],
+    gallery: [
+      'nubra/sand-dunes-and-poplars-nubra-valley-ladakh',
+      'nubra/nubra-valley-2',
+      'nubra/en-route-nubra-valley-from-leh-ladakh-india',
+      'shey/view-from-shey-palace-02',
+      'pangong/pangong-tso-3',
+      'khardung-la/yak-near-khardung-la-mountain-pass',
+      'chang-la/changla-pass-india-2',
+      'leh/leh-02',
+    ],
   },
   {
     slug: 'spiti',
@@ -242,8 +261,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '20 June 2027',
     groupSize: 10,
     spotsLeft: 2,
-    image: '/images/spiti.jpg',
-    banner: img('valley-river'),
+    image: photoSrc('kaza/spiti-river-kaza-himachal'),
+    banner: pic('key-monastery/key-monastery-spiti-himachal-pradesh'),
     stops: [
       { name: 'Kaza', note: 'Start', coords: [78.071, 32.2276] },
       { name: 'Key', note: 'Monastery', coords: [78.0119, 32.2977] },
@@ -252,13 +271,21 @@ export const ADVENTURES: Adventure[] = [
     ],
     legModes: ['trail', 'trail', 'trail'],
     days: [
-      { title: 'Arrive in Kaza', body: 'Settle in and acclimatise.', highlights: ['Rest'], media: img('spiti') },
-      { title: 'Up to Key Monastery', body: 'A short climb to the valley’s most famous monastery.', highlights: ['6 km walk'], media: img('cloud-peaks') },
-      { title: 'Key to Kibber', body: 'High trails with views over the Spiti river.', highlights: ['9 km walk', 'Homestay'], media: img('valley-river') },
-      { title: 'Across to Langza', body: 'Fossils, the Buddha statue and open skies.', highlights: ['12 km walk'], media: img('dust-valley') },
-      { title: 'Back to Kaza', body: 'Descend for a final evening together.', highlights: ['Farewell dinner'], media: img('himachal') },
+      { title: 'Arrive in Kaza', body: 'Settle in and acclimatise.', highlights: ['Rest'], media: pic('kaza/spiti-river-right-bank-vista-himachal') },
+      { title: 'Up to Key Monastery', body: 'A short climb to the valley’s most famous monastery.', highlights: ['6 km walk'], media: pic('key-monastery/kee-monastery-spiti-valley') },
+      { title: 'Key to Kibber', body: 'High trails with views over the Spiti river.', highlights: ['9 km walk', 'Homestay'], media: pic('kibber/kibber-spiti-himachal') },
+      { title: 'Across to Langza', body: 'Fossils, the Buddha statue and open skies.', highlights: ['12 km walk'], media: pic('langza/budhha-statue-from-back-in-langza-spiti-valley') },
+      { title: 'Back to Kaza', body: 'Descend for a final evening together.', highlights: ['Farewell dinner'], media: pic('spiti/nh505-spiti-kaza-losar') },
     ],
-    gallery: ['spiti', 'valley-river', 'cloud-peaks', 'himachal', 'dust-valley'],
+    gallery: [
+      'spiti/spiti-gorge-kaza-losar',
+      'pin-valley/yellow-billed-chough-pin-valley-spiti-himachal',
+      'kibber/kanamo-peak-south-kibber-spiti',
+      'langza/buddha-statue-langza',
+      'kibber/kibber-agri-spiti-himachal',
+      'langza/star-trail-with-buddha-statue-from-langza',
+      'pin-valley/pin-valley-spiti-himachal',
+    ],
   },
   {
     slug: 'himachal',
@@ -276,8 +303,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '16 May 2027',
     groupSize: 8,
     spotsLeft: 6,
-    image: '/images/himachal.jpg',
-    banner: img('road-aerial'),
+    image: photoSrc('kullu/beas-valley-palchan-kullu-2014-05-10-edit'),
+    banner: pic('jispa/bhaga-river-darcha-gemur-lahaul'),
     stops: [
       { name: 'Manali', note: 'Start', coords: [77.1892, 32.2432] },
       { name: 'Sissu', note: 'Lahaul', coords: [77.125, 32.4776] },
@@ -285,13 +312,20 @@ export const ADVENTURES: Adventure[] = [
     ],
     legModes: ['road', 'road'],
     days: [
-      { title: 'Bike fitting in Manali', body: 'Meet the team and take a short shakedown ride.', highlights: ['20 km ride'], media: img('himachal') },
-      { title: 'Through the Atal tunnel', body: 'Climb to the tunnel and roll down into Lahaul.', highlights: ['45 km ride'], media: img('road-aerial') },
-      { title: 'Sissu and the waterfall', body: 'A rest-ish day of short rides and village walks.', highlights: ['Village walk'], media: img('valley-river') },
-      { title: 'On to Jispa', body: 'Follow the Bhaga river north.', highlights: ['50 km ride', 'Riverside camp'], media: img('rider-valley') },
-      { title: 'Return to Manali', body: 'Vehicle transfer back and a celebration dinner.', highlights: ['Transfer'], media: img('cloud-peaks') },
+      { title: 'Bike fitting in Manali', body: 'Meet the team and take a short shakedown ride.', highlights: ['20 km ride'], media: pic('rohtang/snow-rohtang-range-manali') },
+      { title: 'Through the Atal tunnel', body: 'Climb to the tunnel and roll down into Lahaul.', highlights: ['45 km ride'], media: pic('atal-tunnel/atal-tunnel-01') },
+      { title: 'Sissu and the waterfall', body: 'A rest-ish day of short rides and village walks.', highlights: ['Village walk'], media: pic('sissu/thenu-lahaul-himachal') },
+      { title: 'On to Jispa', body: 'Follow the Bhaga river north.', highlights: ['50 km ride', 'Riverside camp'], media: pic('lahaul/bhaga-gemur-downstream-lahaul') },
+      { title: 'Return to Manali', body: 'Vehicle transfer back and a celebration dinner.', highlights: ['Transfer'], media: pic('rohtang/chandra-river-from-rohtang-himachal') },
     ],
-    gallery: ['himachal', 'road-aerial', 'valley-river', 'rider-valley', 'cloud-peaks'],
+    gallery: [
+      'keylong/view-from-shashur-monastery-keylong',
+      'lahaul/chandra-river-bed-batal-lahaul-and-spiti-dist-hp-india-elev-',
+      'lahaul/jhulla-basket-bhaga-gemur-lahaul',
+      'lahaul/lord-vishnu-taal-lake-lahaul-and-spiti-dist-hp-india',
+      'rohtang/rainbow-from-rohtang-pass-road-1',
+      'lahaul/kardhang-biling-bhaga-dhauladhar',
+    ],
   },
   {
     slug: 'sikkim',
@@ -309,8 +343,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '10 April 2027',
     groupSize: 12,
     spotsLeft: 7,
-    image: '/images/sikkim.jpg',
-    banner: img('cloud-peaks'),
+    image: photoSrc('yumthang/valley-of-rhododendron-flowered-trees'),
+    banner: pic('gangtok/kanchenjunga-himalayas'),
     stops: [
       { name: 'Gangtok', note: 'Start', coords: [88.6065, 27.3389] },
       { name: 'Lachung', note: 'Mountain village', coords: [88.7447, 27.6897] },
@@ -318,13 +352,20 @@ export const ADVENTURES: Adventure[] = [
     ],
     legModes: ['road', 'road'],
     days: [
-      { title: 'Gangtok', body: 'Arrive and explore the ridge-top capital.', highlights: ['City walk'], media: img('sikkim') },
-      { title: 'Up to Lachung', body: 'Waterfalls and cardamom forest on the road north.', highlights: ['120 km drive'], media: img('cloud-sea') },
-      { title: 'Yumthang in bloom', body: 'Rhododendrons, hot springs and a picnic by the river.', highlights: ['Naturalist walk'], media: img('cloud-peaks') },
-      { title: 'Village life', body: 'A day with a Lachungpa family.', highlights: ['Homestay'], media: img('valley-river') },
-      { title: 'Back to Gangtok', body: 'Return south for a farewell dinner.', highlights: ['Transfer'], media: video('/videos/clouds.mp4', 'cloud-sea') },
+      { title: 'Gangtok', body: 'Arrive and explore the ridge-top capital.', highlights: ['City walk'], media: pic('gangtok/kanchenjunga-range-viewed-from-zoological-park-gangtok-sikki') },
+      { title: 'Up to Lachung', body: 'Waterfalls and cardamom forest on the road north.', highlights: ['120 km drive'], media: pic('lachung/lachung-monastery-at-lachung-village-in-north-sikkim-india-0') },
+      { title: 'Yumthang in bloom', body: 'Rhododendrons, hot springs and a picnic by the river.', highlights: ['Naturalist walk'], media: pic('yumthang/rhododendron-thompsonii-shingba-rs-ajtj') },
+      { title: 'Village life', body: 'A day with a Lachungpa family.', highlights: ['Homestay'], media: pic('lachung/open-wing-basking-position-of-heliophorus-moorei-hewitson-18') },
+      { title: 'Back to Gangtok', body: 'Return south for a farewell dinner.', highlights: ['Transfer'], media: pic('yumthang/yumthang-valley-by-ss') },
     ],
-    gallery: ['sikkim', 'cloud-peaks', 'cloud-sea', 'valley-river'],
+    gallery: [
+      'yumthang/rhododendron-glaucophyllum-shingba-rs-ajtj',
+      'yumthang/landscape-on-the-way-to-yumthang-valley-from-lachung-north-s',
+      'yumthang/yumthang-valley-snow-covered',
+      'gangtok/scene-from-kanchenjunga-view-point',
+      'yumthang/rhododendron-hodgsonii-shingba-rs-ajtj',
+      'yumthang/landscape-on-the-way-from-yumthang-valley-to-yumsedong-zero-',
+    ],
   },
   {
     slug: 'andaman',
@@ -342,8 +383,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '5 December 2026',
     groupSize: 10,
     spotsLeft: 3,
-    image: '/images/andaman.jpg',
-    banner: video('/videos/clouds.mp4', 'ship-open'),
+    image: photoSrc('neil/natural-coral-bridge-neili-island-anadaman'),
+    banner: pic('havelock/havelock-island-ethereal-mangrove-tree-andaman-islands'),
     stops: [
       { name: 'Port Blair', note: 'Start', coords: [92.7265, 11.6234] },
       { name: 'Swaraj Dweep', note: 'Havelock', coords: [92.9876, 11.9761] },
@@ -351,13 +392,20 @@ export const ADVENTURES: Adventure[] = [
     ],
     legModes: ['sea', 'sea'],
     days: [
-      { title: 'Port Blair', body: 'Arrive, kit check and a harbour paddle.', highlights: ['Harbour paddle'], media: img('andaman') },
-      { title: 'Ferry to Havelock', body: 'Cross to Swaraj Dweep and paddle the mangroves.', highlights: ['Mangrove paddle'], media: img('ship-open') },
-      { title: 'Reef day', body: 'Snorkel the reefs off Elephant Beach.', highlights: ['Snorkelling'], media: img('ship-mist') },
-      { title: 'Across to Neil', body: 'Paddle and ferry to Shaheed Dweep.', highlights: ['Beach camp'], media: img('cloud-sea') },
-      { title: 'Return', body: 'Sunrise paddle and ferry back to Port Blair.', highlights: ['Ferry'], media: video('/videos/clouds.mp4', 'ship-open') },
+      { title: 'Port Blair', body: 'Arrive, kit check and a harbour paddle.', highlights: ['Harbour paddle'], media: pic('neil/neil-island-andaman-islands') },
+      { title: 'Ferry to Havelock', body: 'Cross to Swaraj Dweep and paddle the mangroves.', highlights: ['Mangrove paddle'], media: pic('baratang/mangroves-at-baratangandaman') },
+      { title: 'Reef day', body: 'Snorkel the reefs off Elephant Beach.', highlights: ['Snorkelling'], media: pic('andaman-reef/coral-reef-elephant-beach-andaman-09') },
+      { title: 'Across to Neil', body: 'Paddle and ferry to Shaheed Dweep.', highlights: ['Beach camp'], media: pic('neil/the-rock-bridge') },
+      { title: 'Return', body: 'Sunrise paddle and ferry back to Port Blair.', highlights: ['Ferry'], media: pic('havelock/havelock-island-radhanagar-beach-before-sunset-andaman-islan') },
     ],
-    gallery: ['andaman', 'ship-open', 'ship-mist', 'cloud-sea'],
+    gallery: [
+      'havelock/havelock-island-sandy-lagoon-andaman-islands',
+      'neil/collared-kingfisher-at-neil-island-shaheed-dweep-south-andam',
+      'andaman-reef/snorkeling-at-elephant-beach-havelock-islandandaman',
+      'neil/shaheed-island-andamans-mangrove-beach-true-wilderness',
+      'havelock/havelock-island-mangrove-tree-rising-out-of-tropical-sea-and',
+      'havelock/radhanagar-beach-havelock-vrvbaan042k24',
+    ],
   },
   {
     slug: 'zanskar',
@@ -375,8 +423,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '18 July 2027',
     groupSize: 8,
     spotsLeft: 1,
-    image: '/images/zanskar.jpg',
-    banner: img('dust-valley'),
+    image: photoSrc('padum/road-padum-zanskar-range'),
+    banner: pic('pensi-la/drang-drung-glacier'),
     stops: [
       { name: 'Kargil', note: 'Start', coords: [76.1349, 34.5539] },
       { name: 'Rangdum', note: 'Camp', coords: [76.329, 34.0556] },
@@ -384,14 +432,21 @@ export const ADVENTURES: Adventure[] = [
     ],
     legModes: ['road', 'road'],
     days: [
-      { title: 'Kargil', body: 'Gear check and briefing.', highlights: ['Briefing'], media: img('zanskar') },
-      { title: 'Suru valley to Rangdum', body: 'Glaciers, Nun-Kun views and the first camp.', highlights: ['Camp'], media: img('dust-valley') },
-      { title: 'Over Pensi La', body: 'Cross the pass into Zanskar proper.', highlights: ['High pass'], media: img('rider-dust') },
-      { title: 'Padum', body: 'Monasteries and a rest day.', highlights: ['Rest'], media: img('valley-river') },
-      { title: 'Stars and silence', body: 'A final wild camp under the Milky Way.', highlights: ['Wild camp'], media: img('cloud-peaks') },
-      { title: 'Return', body: 'Long drive back to Kargil.', highlights: ['Transfer'], media: img('road-aerial') },
+      { title: 'Kargil', body: 'Gear check and briefing.', highlights: ['Briefing'], media: pic('zanskar/rain-clouds-tsarap-phuktal-zanskar') },
+      { title: 'Suru valley to Rangdum', body: 'Glaciers, Nun-Kun views and the first camp.', highlights: ['Camp'], media: pic('rangdum/rangdum-village-sheep') },
+      { title: 'Over Pensi La', body: 'Cross the pass into Zanskar proper.', highlights: ['High pass'], media: pic('pensi-la/pensi-la-view') },
+      { title: 'Padum', body: 'Monasteries and a rest day.', highlights: ['Rest'], media: pic('padum/karsha-gompa-side-village-zanskar') },
+      { title: 'Stars and silence', body: 'A final wild camp under the Milky Way.', highlights: ['Wild camp'], media: pic('padum/stod-doda-padum-zanskar-range') },
+      { title: 'Return', body: 'Long drive back to Kargil.', highlights: ['Transfer'], media: pic('zanskar/fields-zangla-zanskar-river-ladakh') },
     ],
-    gallery: ['zanskar', 'dust-valley', 'rider-dust', 'valley-river', 'cloud-peaks', 'road-aerial'],
+    gallery: [
+      'pensi-la/penzi-la-3',
+      'rangdum/rangdum-village-of-zanskar-in-kargil',
+      'padum/gonbo-rangjon-shinko-la-zanskar',
+      'zanskar/tsarap-river2',
+      'padum/ne-view-stongdey-zanskar',
+      'rangdum/rangdum-monastery-zanskar-india',
+    ],
   },
 ];
 

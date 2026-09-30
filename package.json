@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "images:index": "node scripts/images/index-library.ts",
+    "images:find": "node scripts/images/find-candidates.ts",
+    "images:import": "node scripts/images/import-commons.ts",
+    "routes:build": "node scripts/build-routes.ts"
   },
   "dependencies": {
     "lucide-react": "^1.49.0",
@@ -23,6 +27,7 @@
     "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.6.1",
     "postcss": "^8.5.28",
+    "sharp": "^0.35.5",
     "tailwindcss": "^3.4.19",
     "typescript": "^7.0.2",
     "vite": "^6.4.3"

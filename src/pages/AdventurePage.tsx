@@ -30,7 +30,7 @@ export function AdventurePage() {
       <Suspense fallback={<div data-surface="light" className="h-[900px] bg-white" />}>
         <RouteMap adventure={adventure} />
       </Suspense>
-      <Gallery images={adventure.gallery} title={`${adventure.place}, up close.`} />
+      <Gallery photos={adventure.gallery} title={`${adventure.place}, up close.`} />
       <RegisterInterest adventure={adventure} />
       <section data-surface="light" className={`bg-white ${INK_LIGHT} py-24 md:py-32`}>
         <CardRail adventures={related} header={<h2 className={SECTION_TITLE}>More adventures.</h2>} />

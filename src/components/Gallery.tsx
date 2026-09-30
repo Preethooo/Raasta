@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Reveal } from '@/motion';
 import { CONTAINER, SECTION_TITLE } from '@/ui';
+import { creditLine, getPhoto } from '@/data/photos';
 
-export function Gallery({ images, title = 'Gallery.' }: { images: string[]; title?: string }) {
+/** `photos` are ids from the photo library (src/data/photos.json). */
+export function Gallery({ photos: ids, title = 'Gallery.' }: { photos: string[]; title?: string }) {
   const [open, setOpen] = useState<number | null>(null);
-  const srcs = images.map((n) => `/images/${n}.jpg`);
+  const photos = ids.map(getPhoto);
+  const srcs = photos.map((p) => p.file);
 
   useEffect(() => {
     if (open === null) return;
@@ -41,7 +44,7 @@ export function Gallery({ images, title = 'Gallery.' }: { images: string[]; titl
               >
                 <img
                   src={src}
-                  alt=""
+                  alt={photos[i].caption}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -61,8 +64,8 @@ export function Gallery({ images, title = 'Gallery.' }: { images: string[]; titl
         >
           <img
             src={srcs[open]}
-            alt=""
-            className="max-h-full max-w-full rounded-2xl object-contain"
+            alt={photos[open].caption}
+            className="max-h-[85%] max-w-full rounded-2xl object-contain"
             onClick={(e) => e.stopPropagation()}
           />
           <button
@@ -95,9 +98,19 @@ export function Gallery({ images, title = 'Gallery.' }: { images: string[]; titl
           >
             <ChevronRight size={20} />
           </button>
-          <p className="absolute bottom-5 left-1/2 -translate-x-1/2 text-sm text-white/60">
-            {open + 1} / {srcs.length}
-          </p>
+          <div className="absolute inset-x-0 bottom-5 px-16 text-center" onClick={(e) => e.stopPropagation()}>
+            <p className="text-[15px] font-medium text-white">{photos[open].caption}</p>
+            <p className="mt-1 text-xs text-white/55">
+              {open + 1} / {srcs.length} ·{' '}
+              {photos[open].sourceUrl ? (
+                <a href={photos[open].sourceUrl} target="_blank" rel="noreferrer" className="underline hover:text-white">
+                  {creditLine(photos[open])}
+                </a>
+              ) : (
+                creditLine(photos[open])
+              )}
+            </p>
+          </div>
         </div>
       )}
     </section>

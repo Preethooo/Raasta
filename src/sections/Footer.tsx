@@ -57,6 +57,9 @@ export function Footer() {
             <a href="#" className="hover:text-[#1d1d1f] hover:underline">
               Terms of Use
             </a>
+            <Link to="/credits" className="hover:text-[#1d1d1f] hover:underline">
+              Photo credits
+            </Link>
           </div>
         </div>
       </div>

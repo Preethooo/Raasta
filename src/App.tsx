@@ -8,6 +8,7 @@ import { CollectionPage } from '@/pages/CollectionPage';
 import { AdventurePage } from '@/pages/AdventurePage';
 import { AboutPage } from '@/pages/AboutPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
+import { CreditsPage } from '@/pages/CreditsPage';
 
 /** Jump to the top on page change (filters only change the query, so they don't). */
 function ScrollToTop() {
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/adventures/region/:id" element={<CollectionPage kind="region" />} />
           <Route path="/adventures/:slug" element={<AdventurePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/credits" element={<CreditsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
