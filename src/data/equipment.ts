@@ -162,6 +162,13 @@ export const EQUIPMENT: Record<string, EquipmentItem> = {
 export type CrewRole = { role: string; body: string; icon: LucideIcon };
 
 /** Who travels with you, by adventure type. */
+/** Travels with every trip, whatever the activity. */
+export const CARAVAN_CREW: CrewRole = {
+  role: 'Support caravan',
+  body: 'Our caravan with a washroom, kitchen and bed follows the group every day, with its own driver and crew.',
+  icon: Caravan,
+};
+
 export const CREW: Record<CategoryId, CrewRole[]> = {
   motorbiking: [
     { role: 'Ride leader', body: 'Sets the route, pace and daily briefings, and knows every road.', icon: Flag },

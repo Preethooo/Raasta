@@ -186,6 +186,61 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mangroves_at_baratang,Andaman.jpg"
   },
+  "caravan/bespoke-volkswagen-campervan-interior-built-by-the-wee-campe": {
+    "id": "caravan/bespoke-volkswagen-campervan-interior-built-by-the-wee-campe",
+    "place": "caravan",
+    "file": "/images/places/caravan/bespoke-volkswagen-campervan-interior-built-by-the-wee-campe.webp",
+    "caption": "A campervan kitchen with hob and sink",
+    "author": "Danny6060",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bespoke_Volkswagen_campervan_interior_built_by_The_Wee_Camper_Co..jpg"
+  },
+  "caravan/bordtoilette-bad-eines-wohnmobil": {
+    "id": "caravan/bordtoilette-bad-eines-wohnmobil",
+    "place": "caravan",
+    "file": "/images/places/caravan/bordtoilette-bad-eines-wohnmobil.webp",
+    "caption": "A motorhome washroom with toilet and basin",
+    "author": "Seekater",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bordtoilette_Bad_eines_Wohnmobil.JPG"
+  },
+  "caravan/iaa-2024-hanover-p1200113": {
+    "id": "caravan/iaa-2024-hanover-p1200113",
+    "place": "caravan",
+    "file": "/images/places/caravan/iaa-2024-hanover-p1200113.webp",
+    "caption": "Grand California with the side door open",
+    "author": "Matti Blume",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IAA_2024,_Hanover_(P1200113).jpg"
+  },
+  "caravan/self-converted-sprinter-camper-van": {
+    "id": "caravan/self-converted-sprinter-camper-van",
+    "place": "caravan",
+    "file": "/images/places/caravan/self-converted-sprinter-camper-van.webp",
+    "caption": "A bed at the back of a camper van",
+    "author": "Moreteekay",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Self-converted_Sprinter_Camper_Van.jpg"
+  },
+  "caravan/vw-grand-california-600-20-tdi-f-03072021": {
+    "id": "caravan/vw-grand-california-600-20-tdi-f-03072021",
+    "place": "caravan",
+    "file": "/images/places/caravan/vw-grand-california-600-20-tdi-f-03072021.webp",
+    "caption": "Volkswagen Grand California, the kind of caravan we travel with",
+    "author": "© M 93",
+    "license": "CC BY-SA 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:VW_Grand_California_600_2.0_TDI_%E2%80%93_f_03072021.jpg"
+  },
   "chang-la/changla-pass-india-2": {
     "id": "chang-la/changla-pass-india-2",
     "place": "chang-la",

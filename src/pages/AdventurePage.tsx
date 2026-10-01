@@ -6,6 +6,7 @@ import { CategoryChip, MediaView, SpotsBadge } from '@/components/AdventureCard'
 import { Gallery } from '@/components/Gallery';
 import { RegisterInterest } from '@/components/RegisterInterest';
 import { Extras, TakenCareOf, choosableItems } from '@/components/Equipment';
+import { CaravanSupport } from '@/components/CaravanSupport';
 import { CardRail } from '@/sections/Adventures';
 import { Reveal, useParallax } from '@/motion';
 import { CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
@@ -35,6 +36,7 @@ function AdventureDetail({ adventure }: { adventure: Adventure }) {
       <Banner adventure={adventure} />
       <Overview adventure={adventure} />
       <TakenCareOf adventure={adventure} choice={choice} onChoose={setChoice} />
+      <CaravanSupport compact />
       <Timeline adventure={adventure} />
       <Extras adventure={adventure} />
       <Suspense fallback={<div data-surface="light" className="h-[900px] bg-white" />}>

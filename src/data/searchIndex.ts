@@ -74,6 +74,7 @@ for (const e of Object.values(EQUIPMENT)) {
 }
 items.push(
   { kind: 'Page', title: 'All adventures', subtitle: 'Browse and filter every trip', href: '/adventures', text: 'trips tours browse filter' },
+  { kind: 'Page', title: 'Support caravan', subtitle: 'Washroom, kitchen and bed on every trip', href: '/#caravan', text: 'toilet washroom bathroom loo caravan camper kitchen bed support crew' },
   { kind: 'Page', title: 'About us', subtitle: 'From one local to another', href: '/about', text: 'story founder team people why raasta name' },
   { kind: 'Page', title: 'Photo credits', subtitle: 'The photographers behind our pictures', href: '/credits', text: 'credits licence photography' },
   { kind: 'Page', title: 'Home', subtitle: 'Raasta', href: '/', text: 'home start' },

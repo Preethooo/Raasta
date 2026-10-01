@@ -68,7 +68,15 @@ async function download(thumbUrl: string, dest: string) {
 }
 
 const manifest = loadManifest();
+// Photos already in the library are only re-captioned, so re-runs don't hammer the API.
+const titleOf = (url: string) => decodeURIComponent(url.split('/wiki/')[1] ?? '').replace(/_/g, ' ');
+const known = new Map(Object.values(manifest).filter((p) => p.sourceUrl).map((p) => [titleOf(p.sourceUrl), p]));
 for (const pick of picks) {
+  const existing = known.get(pick.title);
+  if (existing) {
+    if (pick.caption) existing.caption = pick.caption;
+    continue;
+  }
   const { ii, title } = await info(pick.title);
   const m = ii.extmetadata ?? {};
   const base = `${pick.place}/${slugify(captionFromTitle(title)).slice(0, 60) || 'photo'}`;

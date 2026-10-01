@@ -1,6 +1,6 @@
 import { Check, ExternalLink, Sparkles } from 'lucide-react';
 import type { Adventure, CategoryId } from '@/data/adventures';
-import { CHOOSABLE, CREW, EQUIPMENT, type EquipmentItem } from '@/data/equipment';
+import { CARAVAN_CREW, CHOOSABLE, CREW, EQUIPMENT, type EquipmentItem } from '@/data/equipment';
 import { creditLine, getPhoto } from '@/data/photos';
 import { Reveal } from '@/motion';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
@@ -33,6 +33,7 @@ export function TakenCareOf({
   const choosable = items.filter((e) => CHOOSABLE.includes(e.kind));
   const featured = items.filter((e) => !CHOOSABLE.includes(e.kind) && e.photo);
   const compact = items.filter((e) => !CHOOSABLE.includes(e.kind) && !e.photo);
+  const crew = [...CREW[a.category], CARAVAN_CREW];
   const pickLabel = choosable[0]?.kind === 'bicycle' ? 'Choose your bike.' : 'Choose your motorbike.';
 
   return (
@@ -45,8 +46,8 @@ export function TakenCareOf({
         </Reveal>
 
         {/* Crew */}
-        <div className="mt-10 md:mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {CREW[a.category].map(({ role, body, icon: Icon }, i) => (
+        <div className={`mt-10 md:mt-14 grid gap-5 sm:grid-cols-2 ${crew.length > 4 ? 'lg:grid-cols-5' : 'lg:grid-cols-4'}`}>
+          {crew.map(({ role, body, icon: Icon }, i) => (
             <Reveal key={role} delay={i * 80}>
               <div className="h-full rounded-[28px] bg-white p-7">
                 <Icon size={26} strokeWidth={1.6} />

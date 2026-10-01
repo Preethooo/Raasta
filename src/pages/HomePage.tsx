@@ -3,6 +3,7 @@ import { Adventures } from '@/sections/Adventures';
 import { BrowseByType } from '@/sections/BrowseByType';
 import { Experience } from '@/sections/Experience';
 import { WhyUs } from '@/sections/WhyUs';
+import { CaravanSupport } from '@/components/CaravanSupport';
 
 export function HomePage() {
   return (
@@ -10,6 +11,7 @@ export function HomePage() {
       <Hero />
       <Adventures />
       <BrowseByType />
+      <CaravanSupport />
       <Experience />
       <WhyUs />
     </>
