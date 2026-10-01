@@ -10,12 +10,18 @@ import { AboutPage } from '@/pages/AboutPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import { CreditsPage } from '@/pages/CreditsPage';
 
-/** Jump to the top on page change (filters only change the query, so they don't). */
+/** Jump to the top on page change, or to `#section` when the link has one. */
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      return;
+    }
+    // Wait a frame for the new page to render, then scroll to the anchor.
+    const t = setTimeout(() => document.querySelector(hash)?.scrollIntoView({ behavior: 'instant' }), 80);
+    return () => clearTimeout(t);
+  }, [pathname, hash]);
   return null;
 }
 

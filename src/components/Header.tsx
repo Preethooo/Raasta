@@ -1,9 +1,11 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Phone, Search } from 'lucide-react';
 import { INK, useSurface } from '@/useSurface';
 import { EASE_OUT } from '@/ui';
 import { Logo } from '@/components/Logo';
+import { SiteSearch } from '@/components/SiteSearch';
+import { SITE } from '@/data/site';
 import { CATEGORIES, SEASONS, ZONES, type CategoryId, type SeasonId, type ZoneId } from '@/data/adventures';
 
 const HEADER_HEIGHT = 56;
@@ -19,6 +21,7 @@ const TABS = [
 export function Header() {
   const [entered, setEntered] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const surface = useSurface(HEADER_HEIGHT / 2);
   const panelDark = surface === 'dark';
@@ -31,6 +34,20 @@ export function Header() {
   }, []);
 
   useEffect(() => setMegaOpen(false), [location.pathname, location.search]);
+
+  // ⌘K / Ctrl+K or "/" opens search, like Apple and most docs sites.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const typing = (e.target as HTMLElement)?.closest('input, textarea, select');
+      if (((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') || (e.key === '/' && !typing)) {
+        e.preventDefault();
+        setMegaOpen(false);
+        setSearchOpen(true);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   const enter = (delay: number): CSSProperties => ({
     opacity: entered ? 1 : 0,
@@ -64,14 +81,15 @@ export function Header() {
       <MegaMenu open={megaOpen} dark={panelDark} />
 
       <div
-        className="relative mx-auto flex max-w-[1440px] items-center justify-between px-6 sm:px-8 md:px-12"
+        className="relative mx-auto flex max-w-[1440px] items-center justify-between gap-3 px-4 sm:px-8 md:px-12"
         style={{ height: HEADER_HEIGHT }}
       >
         <Link to="/" aria-label="Raasta home" className="hover:opacity-80" style={enter(100)}>
-          <Logo />
+          {/* Mark only on narrow phones so the tabs and icons fit. */}
+          <Logo className="max-[430px]:[&>span]:hidden" />
         </Link>
 
-        <nav className="flex items-center gap-5 sm:gap-8 md:absolute md:left-1/2 md:-translate-x-1/2">
+        <nav className="flex items-center gap-4 sm:gap-8 md:absolute md:left-1/2 md:-translate-x-1/2">
           {TABS.map((tab, i) => (
             <NavLink
               key={tab.to}
@@ -80,7 +98,7 @@ export function Header() {
               onMouseEnter={() => setMegaOpen(tab.to === '/adventures')}
               onFocus={() => setMegaOpen(tab.to === '/adventures')}
               className={({ isActive }) =>
-                `relative text-[13px] sm:text-sm font-medium transition-opacity hover:opacity-100 ${
+                `relative whitespace-nowrap text-[13px] sm:text-sm font-medium transition-opacity hover:opacity-100 ${
                   isActive ? 'opacity-100' : 'opacity-75'
                 }`
               }
@@ -99,9 +117,30 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Keeps the logo/tabs balance on desktop. */}
-        <span className="hidden md:block w-[88px]" />
+        <div className="flex items-center gap-1 sm:gap-3" style={enter(420)}>
+          <a
+            href={SITE.phoneHref}
+            aria-label={`Call us on ${SITE.phoneDisplay}`}
+            className="flex h-9 items-center gap-2 rounded-full px-2 text-sm font-medium opacity-90 hover:opacity-100"
+          >
+            <Phone size={16} strokeWidth={2} />
+            <span className="hidden lg:inline">{SITE.phoneDisplay}</span>
+          </a>
+          <button
+            type="button"
+            onClick={() => {
+              setMegaOpen(false);
+              setSearchOpen(true);
+            }}
+            aria-label="Search Raasta"
+            className="grid h-9 w-9 place-items-center rounded-full opacity-90 hover:opacity-100"
+          >
+            <Search size={18} strokeWidth={2} />
+          </button>
+        </div>
       </div>
+
+      <SiteSearch open={searchOpen} dark={panelDark} onClose={() => setSearchOpen(false)} />
     </header>
   );
 }

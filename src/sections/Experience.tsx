@@ -23,7 +23,7 @@ export function Experience() {
       <img src="/images/experience.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/20" />
 
-      <div className="relative flex h-full flex-col items-center justify-end px-6 pb-20 md:pb-28 text-center">
+      <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-start justify-end px-6 pb-20 sm:px-8 md:px-12 md:pb-28 lg:px-20">
         <h2 className={SECTION_TITLE} style={{ textShadow: '0 2px 24px rgba(0,0,0,0.35)' }}>
           Watch the experience.
         </h2>

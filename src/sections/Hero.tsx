@@ -119,11 +119,11 @@ export function Hero() {
 
           {/* Section 2 */}
           <section
-            className="absolute inset-0 flex items-center justify-center px-6 sm:px-8"
+            className="absolute inset-0 flex flex-col justify-center px-6 sm:px-8 md:px-20 lg:px-32"
             style={sectionStyle(o2)}
           >
             <Stagger visible={v2} delay={0}>
-              <h2 className={`${HEADLINE_CLASS} text-center`} style={HEADLINE_STYLE}>
+              <h2 className={HEADLINE_CLASS} style={HEADLINE_STYLE}>
                 Thoughtfully crafted journeys.
                 <br />
                 Deeply local experiences.
@@ -158,7 +158,7 @@ export function Hero() {
 
           {/* Section 3 */}
           <section
-            className="absolute inset-0 flex items-center justify-end px-6 sm:px-8 md:px-20 lg:px-32"
+            className="absolute inset-0 flex flex-col justify-center px-6 sm:px-8 md:px-20 lg:px-32"
             style={sectionStyle(o3)}
           >
             <div className="max-w-3xl">

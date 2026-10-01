@@ -11,7 +11,6 @@ import { Reveal, useParallax } from '@/motion';
 import { CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import { DarkSection } from '@/components/Surface';
-import { ScrollVideo } from '@/components/ScrollVideo';
 
 // The map library is heavy; only load it on adventure pages.
 const RouteMap = lazy(() => import('@/components/RouteMap').then((m) => ({ default: m.RouteMap })));
@@ -220,11 +219,7 @@ function DayRow({ day, index, reached }: { day: Day; index: number; reached: boo
       <Reveal className={flip ? 'md:order-2' : ''}>
         <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-white/5">
           <div ref={mediaRef} className="absolute inset-x-0 -top-[12%] h-[124%]">
-            {day.media.type === 'video' ? (
-              <ScrollVideo src={day.media.src} poster={day.media.poster} className="h-full w-full" />
-            ) : (
-              <MediaView media={day.media} className="h-full w-full" />
-            )}
+            <MediaView media={day.media} className="h-full w-full" />
           </div>
         </div>
       </Reveal>
