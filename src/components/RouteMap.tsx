@@ -20,7 +20,7 @@ const LEG_DRAW_MS = 1400;
 const MODE = {
   road: { label: 'by road', icon: Car },
   trail: { label: 'on foot', icon: Mountain },
-  sea: { label: 'by sea', icon: Ship },
+  sea: { label: 'by boat', icon: Ship },
 } as const;
 
 const lineData = (coords: LngLat[]) => ({

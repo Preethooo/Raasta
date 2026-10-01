@@ -22,7 +22,7 @@ import type { CategoryId } from '@/data/adventures';
  * PRICES ARE PLACEHOLDERS until real rental rates are set.
  */
 
-export type EquipmentKind = 'motorbike' | 'bicycle' | 'kayak' | 'camping' | 'gear';
+export type EquipmentKind = 'motorbike' | 'bicycle' | 'kayak' | 'camping' | 'boat' | 'gear';
 
 export type EquipmentItem = {
   id: string;
@@ -135,6 +135,28 @@ export const EQUIPMENT: Record<string, EquipmentItem> = {
     ],
     price: 'Included',
   },
+  'surf-kit': {
+    id: 'surf-kit',
+    kind: 'gear',
+    name: 'Surf kit and lessons',
+    summary: 'Soft-top boards sized to you, rash vests and two lessons with certified local surf coaches.',
+    specs: [],
+    price: 'Included',
+  },
+  yacht: {
+    id: 'yacht',
+    kind: 'boat',
+    name: 'A day on our yacht',
+    photo: 'goa/a-boat-sailing-through-arabina-sea-from-cabo-de-rama-fort',
+    summary:
+      'A crewed sailing yacht for the whole group: a day down the coast with a swim stop, lunch on deck and a sunset celebration on the way back.',
+    specs: [
+      ['Crew', 'Skipper and deckhand'],
+      ['Included', 'Lunch, drinks, snorkel gear'],
+      ['Duration', 'Full day'],
+    ],
+    price: 'Included',
+  },
 };
 
 export type CrewRole = { role: string; body: string; icon: LucideIcon };
@@ -167,6 +189,11 @@ export const CREW: Record<CategoryId, CrewRole[]> = {
     { role: 'Water guides', body: 'Certified kayak and rescue guides lead every paddle.', icon: LifeBuoy },
     { role: 'Safety kayaker', body: 'Paddles alongside the group, ready to help.', icon: Shield },
     { role: 'Support jeep', body: 'Brings the kayaks to each put-in and your luggage to the next stay.', icon: Truck },
+  ],
+  heritage: [
+    { role: 'Historian guide', body: 'Tells the stories behind every fort, stepwell and carving, not just the dates.', icon: Compass },
+    { role: 'Local host', body: 'Takes you into the old city’s kitchens, workshops and homes.', icon: Users },
+    { role: 'Driver and support', body: 'Air-conditioned transfers between sites and your luggage handled.', icon: Truck },
   ],
   camping: [
     { role: 'Expedition leader', body: 'Plans around weather, altitude and the group.', icon: Mountain },

@@ -13,6 +13,7 @@ const LEAD: Record<CategoryId, string> = {
   nature: 'A naturalist, a driver and a local host. You just take it in.',
   water: 'Kayaks, certified guides and a support jeep. You just paddle.',
   camping: 'Tents, kitchen and a full camp crew. You just explore.',
+  heritage: 'A historian guide, a local host and every transfer handled. You just wander.',
 };
 
 export const choosableItems = (a: Adventure) =>

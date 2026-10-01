@@ -339,5 +339,158 @@
       "campfire night mountains",
       "expedition tent Himalaya"
     ]
+  },
+  {
+    "id": "coorg",
+    "adventure": "coorg",
+    "name": "Coorg forests",
+    "queries": [
+      "Kodagu forest",
+      "Brahmagiri Kodagu",
+      "Tadiandamol",
+      "Irupu falls",
+      "Coorg hills mist",
+      "Barapole river"
+    ]
+  },
+  {
+    "id": "coorg-wild",
+    "adventure": "coorg",
+    "name": "Coorg wildlife",
+    "queries": [
+      "Malabar trogon",
+      "Nagarhole National Park",
+      "Dubare elephant camp",
+      "Malabar whistling thrush"
+    ]
+  },
+  {
+    "id": "goa",
+    "adventure": "goa",
+    "name": "Goa coast",
+    "queries": [
+      "Palolem beach",
+      "Arambol beach",
+      "Butterfly beach Goa",
+      "Goa surfing",
+      "Cabo de Rama",
+      "Mandovi river Panaji"
+    ]
+  },
+  {
+    "id": "goa-land",
+    "adventure": "goa",
+    "name": "Goa interior",
+    "queries": [
+      "Dudhsagar falls",
+      "Divar island",
+      "Goa paddy fields",
+      "Old Goa Basilica"
+    ]
+  },
+  {
+    "id": "kabini",
+    "adventure": "kabini",
+    "name": "Kabini",
+    "queries": [
+      "Kabini river",
+      "Kabini backwaters",
+      "Nagarhole elephant",
+      "Kabini tiger",
+      "Indian peafowl displaying"
+    ]
+  },
+  {
+    "id": "jaipur",
+    "adventure": "jaipur",
+    "name": "Jaipur",
+    "queries": [
+      "Hawa Mahal",
+      "Amer Fort",
+      "Nahargarh fort Jaipur",
+      "Jal Mahal",
+      "Patrika gate Jaipur",
+      "Panna Meena ka Kund"
+    ]
+  },
+  {
+    "id": "sambhar",
+    "adventure": "jaipur",
+    "name": "Sambhar Salt Lake",
+    "queries": [
+      "Sambhar lake",
+      "Sambhar flamingo",
+      "Sambhar salt"
+    ]
+  },
+  {
+    "id": "kaziranga",
+    "adventure": "assam",
+    "name": "Kaziranga",
+    "queries": [
+      "Kaziranga rhinoceros",
+      "Kaziranga National Park",
+      "Kaziranga elephant safari",
+      "Kaziranga swamp deer"
+    ]
+  },
+  {
+    "id": "assam",
+    "adventure": "assam",
+    "name": "Assam",
+    "queries": [
+      "Assam tea garden",
+      "Brahmaputra river Assam",
+      "Karbi Anglong hills",
+      "Majuli island"
+    ]
+  },
+  {
+    "id": "meghalaya",
+    "adventure": "meghalaya",
+    "name": "Meghalaya",
+    "queries": [
+      "living root bridge",
+      "Nongriat",
+      "Umngot river Dawki",
+      "Nohkalikai falls",
+      "Sohra Meghalaya",
+      "Mawlynnong"
+    ]
+  },
+  {
+    "id": "hampi",
+    "adventure": "hampi",
+    "name": "Hampi",
+    "queries": [
+      "Hampi boulders",
+      "Virupaksha temple Hampi",
+      "Vittala temple stone chariot",
+      "Hampi coracle",
+      "Matanga hill Hampi",
+      "Anegundi"
+    ]
+  },
+  {
+    "id": "badami",
+    "adventure": "hampi",
+    "name": "Badami",
+    "queries": [
+      "Badami cave temples",
+      "Badami sandstone cliffs",
+      "Agastya lake Badami"
+    ]
+  },
+  {
+    "id": "gandikota",
+    "adventure": "gandikota",
+    "name": "Gandikota",
+    "queries": [
+      "Gandikota",
+      "Gandikota canyon",
+      "Pennar river Gandikota",
+      "Gandikota fort",
+      "Belum caves"
+    ]
   }
 ]

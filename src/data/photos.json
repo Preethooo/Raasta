@@ -76,6 +76,72 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snorkeling_at_Elephant_beach,_Havelock_Island,Andaman.jpg"
   },
+  "assam/beautiful-tea-garden-of-dibrugarhassam": {
+    "id": "assam/beautiful-tea-garden-of-dibrugarhassam",
+    "place": "assam",
+    "file": "/images/places/assam/beautiful-tea-garden-of-dibrugarhassam.webp",
+    "caption": "Tea gardens of Dibrugarh",
+    "author": "Nilotpal Hazarika123",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beautiful_Tea_Garden_of_Dibrugarh,Assam.jpg"
+  },
+  "assam/landscape-of-kohora-river": {
+    "id": "assam/landscape-of-kohora-river",
+    "place": "assam",
+    "file": "/images/places/assam/landscape-of-kohora-river.webp",
+    "caption": "The Kohora river near Kaziranga",
+    "author": "Epil Kongari",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landscape_of_Kohora_River.jpg"
+  },
+  "assam/langkovku-waterfall-in-manjha-karbi-anglong": {
+    "id": "assam/langkovku-waterfall-in-manjha-karbi-anglong",
+    "place": "assam",
+    "file": "/images/places/assam/langkovku-waterfall-in-manjha-karbi-anglong.webp",
+    "caption": "Langkovku waterfall, Karbi Anglong",
+    "author": "Pranabnlp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Langkovku_waterfall_in_Manjha,_Karbi_Anglong.jpg"
+  },
+  "assam/majuli-the-largest-river-island": {
+    "id": "assam/majuli-the-largest-river-island",
+    "place": "assam",
+    "file": "/images/places/assam/majuli-the-largest-river-island.webp",
+    "caption": "Majuli, the largest river island",
+    "author": "Udit Kapoor",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Majuli_-_The_largest_river_island.jpg"
+  },
+  "assam/tea-garden-in-assam": {
+    "id": "assam/tea-garden-in-assam",
+    "place": "assam",
+    "file": "/images/places/assam/tea-garden-in-assam.webp",
+    "caption": "A tea garden in Assam",
+    "author": "বিশ্বজিৎ বৈশ্য",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tea_Garden_(%E0%A6%9A%E0%A6%BE%E0%A6%B9_%E0%A6%AC%E0%A6%BE%E0%A6%97%E0%A6%BE%E0%A6%A8)_in_Assam.jpg"
+  },
+  "assam/woman-worker-at-a-tea-garden-of-assam": {
+    "id": "assam/woman-worker-at-a-tea-garden-of-assam",
+    "place": "assam",
+    "file": "/images/places/assam/woman-worker-at-a-tea-garden-of-assam.webp",
+    "caption": "Plucking tea in an Assam garden",
+    "author": "ঈশান জ্যোতি বৰা",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woman_Worker_at_a_tea_garden_of_Assam.jpg"
+  },
   "atal-tunnel/atal-tunnel-01": {
     "id": "atal-tunnel/atal-tunnel-01",
     "place": "atal-tunnel",
@@ -86,6 +152,28 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atal_Tunnel_01.jpg"
+  },
+  "badami/a-cave-temple-at-badami": {
+    "id": "badami/a-cave-temple-at-badami",
+    "place": "badami",
+    "file": "/images/places/badami/a-cave-temple-at-badami.webp",
+    "caption": "A cave temple at Badami",
+    "author": "Rajeshodayanchal",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A-cave-temple-at-badami.JPG"
+  },
+  "badami/agastya-lake-badami": {
+    "id": "badami/agastya-lake-badami",
+    "place": "badami",
+    "file": "/images/places/badami/agastya-lake-badami.webp",
+    "caption": "Agastya lake, Badami",
+    "author": "Abhijit Kar Gupta from Kolkata, India",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agastya_Lake,_Badami_(30600296876).jpg"
   },
   "baratang/mangroves-at-baratangandaman": {
     "id": "baratang/mangroves-at-baratangandaman",
@@ -141,6 +229,72 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baba_Budangiri,_Chikmagalur_(2024)_48.jpg"
+  },
+  "coorg/irupu-falls-coorg-01": {
+    "id": "coorg/irupu-falls-coorg-01",
+    "place": "coorg",
+    "file": "/images/places/coorg/irupu-falls-coorg-01.webp",
+    "caption": "Irupu falls, Coorg",
+    "author": "Shanmugamp7",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irupu_falls,_Coorg_01.jpg"
+  },
+  "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019": {
+    "id": "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019",
+    "place": "coorg",
+    "file": "/images/places/coorg/tadiandamol-tadiyantamol-landscape-during-grv2019.webp",
+    "caption": "Boulders on the Tadiandamol ridge, Coorg",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tadiandamol,_Tadiyantamol_landscape_during_GRV2019_(138).jpg"
+  },
+  "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-2": {
+    "id": "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-2",
+    "place": "coorg",
+    "file": "/images/places/coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-2.webp",
+    "caption": "Hikers on the summit of Tadiandamol",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tadiandamol,_Tadiyantamol_landscape_during_GRV2019_(194).jpg"
+  },
+  "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-3": {
+    "id": "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-3",
+    "place": "coorg",
+    "file": "/images/places/coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-3.webp",
+    "caption": "A trekker crossing the grasslands of Tadiandamol",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tadiandamol,_Tadiyantamol_landscape_during_GRV2019_(211).jpg"
+  },
+  "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-4": {
+    "id": "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-4",
+    "place": "coorg",
+    "file": "/images/places/coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-4.webp",
+    "caption": "Shola forest and grassland below Tadiandamol",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tadiandamol,_Tadiyantamol_landscape_during_GRV2019_(271).jpg"
+  },
+  "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-5": {
+    "id": "coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-5",
+    "place": "coorg",
+    "file": "/images/places/coorg/tadiandamol-tadiyantamol-landscape-during-grv2019-5.webp",
+    "caption": "The forested hills of Coorg",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tadiandamol,_Tadiyantamol_landscape_during_GRV2019_(320).jpg"
   },
   "dandeli/a-perfect-day-for-rafting": {
     "id": "dandeli/a-perfect-day-for-rafting",
@@ -202,7 +356,7 @@
     "place": "equipment",
     "file": "/images/places/equipment/rockrider540s-mallorca.webp",
     "caption": "Decathlon Rockrider mountain bike",
-    "author": "Rafael Ortega D\u00edaz",
+    "author": "Rafael Ortega Díaz",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
@@ -252,6 +406,83 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent_camps_in_Sarchu.jpg"
   },
+  "gandikota/gandikota-10": {
+    "id": "gandikota/gandikota-10",
+    "place": "gandikota",
+    "file": "/images/places/gandikota/gandikota-10.webp",
+    "caption": "The ruins of Gandikota fort",
+    "author": "S.v.madhav",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandikota_10.JPG"
+  },
+  "gandikota/gandikota-20220416-064207-stitch": {
+    "id": "gandikota/gandikota-20220416-064207-stitch",
+    "place": "gandikota",
+    "file": "/images/places/gandikota/gandikota-20220416-064207-stitch.webp",
+    "caption": "Panorama of the Gandikota gorge",
+    "author": "Shyamal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandikota_20220416_064207_stitch.jpg"
+  },
+  "gandikota/gandikota-canyon-cudappah-district-andhra-pradesh-india": {
+    "id": "gandikota/gandikota-canyon-cudappah-district-andhra-pradesh-india",
+    "place": "gandikota",
+    "file": "/images/places/gandikota/gandikota-canyon-cudappah-district-andhra-pradesh-india.webp",
+    "caption": "Gandikota canyon on the Pennar",
+    "author": "Shahid Nawaz Landge",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandikota_Canyon,_Cudappah_district,_Andhra_Pradesh,_India.jpg"
+  },
+  "gandikota/gandikota-hills-grand-canyon-of-india": {
+    "id": "gandikota/gandikota-hills-grand-canyon-of-india",
+    "place": "gandikota",
+    "file": "/images/places/gandikota/gandikota-hills-grand-canyon-of-india.webp",
+    "caption": "The red cliffs of Gandikota",
+    "author": "Akanksha1811",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandikota_Hills_-Grand_Canyon_of_India.jpg"
+  },
+  "gandikota/gandikota-hills4": {
+    "id": "gandikota/gandikota-hills4",
+    "place": "gandikota",
+    "file": "/images/places/gandikota/gandikota-hills4.webp",
+    "caption": "Sandstone towers above the Pennar",
+    "author": "Akanksha1811",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandikota_Hills4.jpg"
+  },
+  "gandikota/gandikota-sunrise": {
+    "id": "gandikota/gandikota-sunrise",
+    "place": "gandikota",
+    "file": "/images/places/gandikota/gandikota-sunrise.webp",
+    "caption": "Sunrise over Gandikota canyon",
+    "author": "Shyamal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandikota_sunrise.jpg"
+  },
+  "gandikota/the-main-caves-belum-andhra-pradesh": {
+    "id": "gandikota/the-main-caves-belum-andhra-pradesh",
+    "place": "gandikota",
+    "file": "/images/places/gandikota/the-main-caves-belum-andhra-pradesh.webp",
+    "caption": "Inside the Belum caves",
+    "author": "Naga Praveena Sharma P",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Main_Caves,_Belum,_Andhra_Pradesh.jpg"
+  },
   "gangtok/kanchenjunga-himalayas": {
     "id": "gangtok/kanchenjunga-himalayas",
     "place": "gangtok",
@@ -284,6 +515,182 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scene_from_Kanchenjunga_View_Point_(51936998657).jpg"
+  },
+  "goa/a-boat-sailing-through-arabina-sea-from-cabo-de-rama-fort": {
+    "id": "goa/a-boat-sailing-through-arabina-sea-from-cabo-de-rama-fort",
+    "place": "goa",
+    "file": "/images/places/goa/a-boat-sailing-through-arabina-sea-from-cabo-de-rama-fort.webp",
+    "caption": "A boat under sail off Cabo de Rama",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_boat_sailing_through_Arabina_sea_from_Cabo_de_Rama_Fort.jpg"
+  },
+  "goa/a-boat-sailing-through-the-arabina-sea-from-cabo-de-rama-for": {
+    "id": "goa/a-boat-sailing-through-the-arabina-sea-from-cabo-de-rama-for",
+    "place": "goa",
+    "file": "/images/places/goa/a-boat-sailing-through-the-arabina-sea-from-cabo-de-rama-for.webp",
+    "caption": "Sailing the Arabian Sea off south Goa",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_boat_sailing_through_the_Arabina_sea_from_Cabo_de_Rama_Fort.jpg"
+  },
+  "goa/arambol-goa-art-performer-at-sunset": {
+    "id": "goa/arambol-goa-art-performer-at-sunset",
+    "place": "goa",
+    "file": "/images/places/goa/arambol-goa-art-performer-at-sunset.webp",
+    "caption": "Sunset on Arambol beach",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arambol,_Goa,_Art_performer_at_sunset.jpg"
+  },
+  "goa/arambol-mountain": {
+    "id": "goa/arambol-mountain",
+    "place": "goa",
+    "file": "/images/places/goa/arambol-mountain.webp",
+    "caption": "Arambol headland, north Goa",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arambol_Mountain.jpg"
+  },
+  "goa/paddy-fields-in-shiroda": {
+    "id": "goa/paddy-fields-in-shiroda",
+    "place": "goa",
+    "file": "/images/places/goa/paddy-fields-in-shiroda.webp",
+    "caption": "Paddy fields at Shiroda",
+    "author": "Donkey335",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paddy_fields_in_Shiroda.jpg"
+  },
+  "goa/paddy-fields-of-goa-01": {
+    "id": "goa/paddy-fields-of-goa-01",
+    "place": "goa",
+    "file": "/images/places/goa/paddy-fields-of-goa-01.webp",
+    "caption": "Monsoon paddy fields, Goa",
+    "author": "Ganesh Mohan T",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paddy_fields_of_Goa_01.jpg"
+  },
+  "goa/paddy-fields-of-south-goa": {
+    "id": "goa/paddy-fields-of-south-goa",
+    "place": "goa",
+    "file": "/images/places/goa/paddy-fields-of-south-goa.webp",
+    "caption": "Paddy fields of south Goa",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paddy_Fields_of_South_Goa.jpg"
+  },
+  "goa/pebble-beach-under-cabo-de-rama-fort": {
+    "id": "goa/pebble-beach-under-cabo-de-rama-fort",
+    "place": "goa",
+    "file": "/images/places/goa/pebble-beach-under-cabo-de-rama-fort.webp",
+    "caption": "Pebble cove under Cabo de Rama",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pebble_beach_under_Cabo_de_Rama_Fort.jpg"
+  },
+  "goa/the-cape-goa-resort-at-cabo-de-rama": {
+    "id": "goa/the-cape-goa-resort-at-cabo-de-rama",
+    "place": "goa",
+    "file": "/images/places/goa/the-cape-goa-resort-at-cabo-de-rama.webp",
+    "caption": "Cliffs at Cabo de Rama",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Cape_Goa_resort_at_Cabo_de_Rama.jpg"
+  },
+  "goa/the-shore-of-arabian-sea-from-cabo-de-rama-fort": {
+    "id": "goa/the-shore-of-arabian-sea-from-cabo-de-rama-fort",
+    "place": "goa",
+    "file": "/images/places/goa/the-shore-of-arabian-sea-from-cabo-de-rama-fort.webp",
+    "caption": "The Arabian Sea from Cabo de Rama",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_shore_of_Arabian_sea_from_Cabo_de_Rama_Fort.jpg"
+  },
+  "hampi/a-temple-under-the-hill-on-hemakunta-complex": {
+    "id": "hampi/a-temple-under-the-hill-on-hemakunta-complex",
+    "place": "hampi",
+    "file": "/images/places/hampi/a-temple-under-the-hill-on-hemakunta-complex.webp",
+    "caption": "A temple among the boulders of Hemakuta",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_temple_under_the_hill_on_Hemakunta_complex.jpg"
+  },
+  "hampi/anegundi-rice-farmers-1": {
+    "id": "hampi/anegundi-rice-farmers-1",
+    "place": "hampi",
+    "file": "/images/places/hampi/anegundi-rice-farmers-1.webp",
+    "caption": "Rice farmers at Anegundi",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anegundi_-_Rice_Farmers_-_1.jpg"
+  },
+  "hampi/anegundi-rice-farmers-3": {
+    "id": "hampi/anegundi-rice-farmers-3",
+    "place": "hampi",
+    "file": "/images/places/hampi/anegundi-rice-farmers-3.webp",
+    "caption": "Paddy and boulders at Anegundi",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anegundi_-_Rice_Farmers_-_3.jpg"
+  },
+  "hampi/anjanadri-hill-in-hampi": {
+    "id": "hampi/anjanadri-hill-in-hampi",
+    "place": "hampi",
+    "file": "/images/places/hampi/anjanadri-hill-in-hampi.webp",
+    "caption": "Anjanadri hill, Hampi",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anjanadri_Hill_in_Hampi_(02).jpg"
+  },
+  "hampi/galigopuram-ruins-of-kodandarama-temple-hampi": {
+    "id": "hampi/galigopuram-ruins-of-kodandarama-temple-hampi",
+    "place": "hampi",
+    "file": "/images/places/hampi/galigopuram-ruins-of-kodandarama-temple-hampi.webp",
+    "caption": "Ruins of Kodandarama temple",
+    "author": "iMahesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galigopuram_ruins_of_Kodandarama_Temple,_Hampi.jpg"
+  },
+  "hampi/hampi-hemakuta-hill-virupaksha-temple": {
+    "id": "hampi/hampi-hemakuta-hill-virupaksha-temple",
+    "place": "hampi",
+    "file": "/images/places/hampi/hampi-hemakuta-hill-virupaksha-temple.webp",
+    "caption": "Hemakuta hill and Virupaksha temple",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hampi_-_Hemakuta_Hill,_Virupaksha_Temple.jpg"
   },
   "havelock/havelock-island-ethereal-mangrove-tree-andaman-islands": {
     "id": "havelock/havelock-island-ethereal-mangrove-tree-andaman-islands",
@@ -340,6 +747,83 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radhanagar_Beach_Havelock_vrvbaan042k24_(10).jpg"
   },
+  "jaipur/20191218-fort-nahargarh-jaipur-1514-9294": {
+    "id": "jaipur/20191218-fort-nahargarh-jaipur-1514-9294",
+    "place": "jaipur",
+    "file": "/images/places/jaipur/20191218-fort-nahargarh-jaipur-1514-9294.webp",
+    "caption": "Rooftops of Nahargarh fort",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191218_Fort_Nahargarh,_Jaipur_1514_9294.jpg"
+  },
+  "jaipur/20191218-fort-nahargarh-jaipur-1531-9318-dxo": {
+    "id": "jaipur/20191218-fort-nahargarh-jaipur-1531-9318-dxo",
+    "place": "jaipur",
+    "file": "/images/places/jaipur/20191218-fort-nahargarh-jaipur-1531-9318-dxo.webp",
+    "caption": "The walls of Nahargarh over the Aravallis",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191218_Fort_Nahargarh,_Jaipur_1531_9318_DxO.jpg"
+  },
+  "jaipur/20191218-jaigarh-fort-amer-jaipur-1551-9335": {
+    "id": "jaipur/20191218-jaigarh-fort-amer-jaipur-1551-9335",
+    "place": "jaipur",
+    "file": "/images/places/jaipur/20191218-jaigarh-fort-amer-jaipur-1551-9335.webp",
+    "caption": "The gate of Jaigarh fort",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191218_Jaigarh_Fort,_Amer,_Jaipur_1551_9335.jpg"
+  },
+  "jaipur/20191218-paac-wiatrow-w-jaipurze-1129-9124": {
+    "id": "jaipur/20191218-paac-wiatrow-w-jaipurze-1129-9124",
+    "place": "jaipur",
+    "file": "/images/places/jaipur/20191218-paac-wiatrow-w-jaipurze-1129-9124.webp",
+    "caption": "Hawa Mahal, the Palace of Winds",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191218_Pa%C5%82ac_Wiatr%C3%B3w_w_Jaipurze_1129_9124.jpg"
+  },
+  "jaipur/20191219-panna-meena-ka-kund-step-well-amber-jaipur-1132-964": {
+    "id": "jaipur/20191219-panna-meena-ka-kund-step-well-amber-jaipur-1132-964",
+    "place": "jaipur",
+    "file": "/images/places/jaipur/20191219-panna-meena-ka-kund-step-well-amber-jaipur-1132-964.webp",
+    "caption": "Panna Meena ka Kund stepwell, Amer",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191219_Panna_Meena_ka_Kund_step_well,_Amber,_Jaipur,_1132_9646.jpg"
+  },
+  "jaipur/jaigarh-fort-amer-jaipur-20191218-1613-9402": {
+    "id": "jaipur/jaigarh-fort-amer-jaipur-20191218-1613-9402",
+    "place": "jaipur",
+    "file": "/images/places/jaipur/jaigarh-fort-amer-jaipur-20191218-1613-9402.webp",
+    "caption": "Jaigarh fort above Amer",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaigarh_Fort,_Amer,_Jaipur,_20191218_1613_9402.jpg"
+  },
+  "jaipur/man-sagar-lake-jaipur-20191218-1431-9249": {
+    "id": "jaipur/man-sagar-lake-jaipur-20191218-1431-9249",
+    "place": "jaipur",
+    "file": "/images/places/jaipur/man-sagar-lake-jaipur-20191218-1431-9249.webp",
+    "caption": "Jal Mahal on Man Sagar lake",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Man_Sagar_Lake,_Jaipur,_20191218_1431_9249.jpg"
+  },
   "jispa/bhaga-river-darcha-gemur-lahaul": {
     "id": "jispa/bhaga-river-darcha-gemur-lahaul",
     "place": "jispa",
@@ -350,6 +834,72 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bhaga_River_Darcha_Gemur_Lahaul_Jun24_A7CR_00231.jpg"
+  },
+  "kabini/dawn-kabini-reservoir-karnataka": {
+    "id": "kabini/dawn-kabini-reservoir-karnataka",
+    "place": "kabini",
+    "file": "/images/places/kabini/dawn-kabini-reservoir-karnataka.webp",
+    "caption": "Dawn on the Kabini reservoir",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dawn_Kabini_Reservoir_Karnataka_Dec21_D72_21491.jpg"
+  },
+  "kabini/indian-peafowl-or-blue-peafowl-pavo-cristatus": {
+    "id": "kabini/indian-peafowl-or-blue-peafowl-pavo-cristatus",
+    "place": "kabini",
+    "file": "/images/places/kabini/indian-peafowl-or-blue-peafowl-pavo-cristatus.webp",
+    "caption": "Indian peafowl",
+    "author": "Senthi Aathavan Senthilverl",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_peafowl_or_blue_peafowl_(Pavo_cristatus).jpg"
+  },
+  "kabini/indian-peafowl4": {
+    "id": "kabini/indian-peafowl4",
+    "place": "kabini",
+    "file": "/images/places/kabini/indian-peafowl4.webp",
+    "caption": "A peacock in full display",
+    "author": "Mildeep",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Peafowl4.jpg"
+  },
+  "kabini/sunset-tree-kabini-reservoir-nagarhole": {
+    "id": "kabini/sunset-tree-kabini-reservoir-nagarhole",
+    "place": "kabini",
+    "file": "/images/places/kabini/sunset-tree-kabini-reservoir-nagarhole.webp",
+    "caption": "Sunset over the Kabini backwaters",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_Tree_Kabini_Reservoir_Nagarhole_Dec21_D72_21461.jpg"
+  },
+  "kabini/trees-kabini-reservoir-nagarhole-india": {
+    "id": "kabini/trees-kabini-reservoir-nagarhole-india",
+    "place": "kabini",
+    "file": "/images/places/kabini/trees-kabini-reservoir-nagarhole-india.webp",
+    "caption": "Trees at the edge of the Kabini reservoir",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trees_Kabini_Reservoir_Nagarhole_India_Dec21_R16_05318.jpg"
+  },
+  "kabini/wayanad-kabini-river-at-kuravadweep": {
+    "id": "kabini/wayanad-kabini-river-at-kuravadweep",
+    "place": "kabini",
+    "file": "/images/places/kabini/wayanad-kabini-river-at-kuravadweep.webp",
+    "caption": "The Kabini river",
+    "author": "Ingo Mehling",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wayanad_-_Kabini_River_at_Kuravadweep.jpg"
   },
   "kaza/spiti-river-kaza-himachal": {
     "id": "kaza/spiti-river-kaza-himachal",
@@ -366,12 +916,111 @@
     "id": "kaza/spiti-river-right-bank-vista-himachal",
     "place": "kaza",
     "file": "/images/places/kaza/spiti-river-right-bank-vista-himachal.webp",
-    "caption": "Spiti valley from the river\u2019s right bank",
+    "caption": "Spiti valley from the river’s right bank",
     "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spiti_River_Right_Bank_Vista_Himachal_Jun18_D72_7628.jpg"
+  },
+  "kaziranga/barasingha-in-kaziranga-national-park-march-2025-by-tisha-mu": {
+    "id": "kaziranga/barasingha-in-kaziranga-national-park-march-2025-by-tisha-mu",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/barasingha-in-kaziranga-national-park-march-2025-by-tisha-mu.webp",
+    "caption": "Swamp deer in Kaziranga",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barasingha_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_06.jpg"
+  },
+  "kaziranga/barasingha-in-kaziranga-national-park-march-2025-by-tisha-mu-2": {
+    "id": "kaziranga/barasingha-in-kaziranga-national-park-march-2025-by-tisha-mu-2",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/barasingha-in-kaziranga-national-park-march-2025-by-tisha-mu-2.webp",
+    "caption": "A swamp deer stag, Kaziranga",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barasingha_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_04.jpg"
+  },
+  "kaziranga/black-necked-stork-in-kaziranga-national-park-march-2025-by-": {
+    "id": "kaziranga/black-necked-stork-in-kaziranga-national-park-march-2025-by-",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/black-necked-stork-in-kaziranga-national-park-march-2025-by-.webp",
+    "caption": "Black-necked stork, Kaziranga",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black-necked_Stork_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_04.jpg"
+  },
+  "kaziranga/indian-elephant-at-kaziranga-national-park-assam-india": {
+    "id": "kaziranga/indian-elephant-at-kaziranga-national-park-assam-india",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/indian-elephant-at-kaziranga-national-park-assam-india.webp",
+    "caption": "An elephant in the tall grass of Kaziranga",
+    "author": "Rohit Sharma",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_elephant_at_Kaziranga_National_Park,_Assam,_India.jpg"
+  },
+  "kaziranga/indian-elephant-in-kaziranga-national-park-march-2025-by-tis": {
+    "id": "kaziranga/indian-elephant-in-kaziranga-national-park-march-2025-by-tis",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/indian-elephant-in-kaziranga-national-park-march-2025-by-tis.webp",
+    "caption": "An elephant on a forest track, Kaziranga",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_elephant_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_04.jpg"
+  },
+  "kaziranga/indian-elephant-in-kaziranga-national-park-march-2025-by-tis-2": {
+    "id": "kaziranga/indian-elephant-in-kaziranga-national-park-march-2025-by-tis-2",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/indian-elephant-in-kaziranga-national-park-march-2025-by-tis-2.webp",
+    "caption": "Elephant calves, Kaziranga",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_elephant_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_06.jpg"
+  },
+  "kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t": {
+    "id": "kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t.webp",
+    "caption": "One-horned rhino, Kaziranga",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_rhinoceros_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_13.jpg"
+  },
+  "kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t-2": {
+    "id": "kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t-2",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t-2.webp",
+    "caption": "A one-horned rhino grazing",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_rhinoceros_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_07.jpg"
+  },
+  "kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t-3": {
+    "id": "kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t-3",
+    "place": "kaziranga",
+    "file": "/images/places/kaziranga/indian-rhinoceros-in-kaziranga-national-park-march-2025-by-t-3.webp",
+    "caption": "A rhino crossing the forest trail",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_rhinoceros_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_02.jpg"
   },
   "kerala-backwaters/kerala-backwater-20080218-11": {
     "id": "kerala-backwaters/kerala-backwater-20080218-11",
@@ -520,7 +1169,7 @@
     "id": "kudremukh/kudremukh",
     "place": "kudremukh",
     "file": "/images/places/kudremukh/kudremukh.webp",
-    "caption": "Kudremukh\u2019s grassland hills",
+    "caption": "Kudremukh’s grassland hills",
     "author": "Dhruvaraj S from India",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -714,6 +1363,94 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leh_Village_from_Shanti_Stupa_2.jpg"
   },
+  "meghalaya/close-wing-basking-position-of-orinoma-damaris-gray1846-tige": {
+    "id": "meghalaya/close-wing-basking-position-of-orinoma-damaris-gray1846-tige",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/close-wing-basking-position-of-orinoma-damaris-gray1846-tige.webp",
+    "caption": "Tigerbrown butterfly, Meghalaya",
+    "author": "Atanu Bose Photography",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Close_wing_basking_position_of_Orinoma_damaris_(Gray,1846)_%E2%80%93_Tigerbrown_(Male).jpg"
+  },
+  "meghalaya/dawki-lake-meghalaya-india-2": {
+    "id": "meghalaya/dawki-lake-meghalaya-india-2",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/dawki-lake-meghalaya-india-2.webp",
+    "caption": "Boats on the Umngot river, Dawki",
+    "author": "Joydeep Chakraborty",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dawki_Lake,_Meghalaya,_India_2.jpg"
+  },
+  "meghalaya/dawki-lake-meghalaya-india-3": {
+    "id": "meghalaya/dawki-lake-meghalaya-india-3",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/dawki-lake-meghalaya-india-3.webp",
+    "caption": "Clear water of the Umngot at Dawki",
+    "author": "Joydeep Chakraborty",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dawki_Lake,_Meghalaya,_India_3.jpg"
+  },
+  "meghalaya/double-decker-living-root-bridge-02": {
+    "id": "meghalaya/double-decker-living-root-bridge-02",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/double-decker-living-root-bridge-02.webp",
+    "caption": "The double-decker living root bridge, Nongriat",
+    "author": "Chiranjeeb Baul",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Double_decker_living_root_bridge_02.jpg"
+  },
+  "meghalaya/living-root-bridge-maghalaya-india1": {
+    "id": "meghalaya/living-root-bridge-maghalaya-india1",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/living-root-bridge-maghalaya-india1.webp",
+    "caption": "Roots over the stream, Meghalaya",
+    "author": "Joydeep Chakraborty",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Living_root_bridge,_Maghalaya,_India1.jpg"
+  },
+  "meghalaya/living-root-bridge-maghalaya-india2": {
+    "id": "meghalaya/living-root-bridge-maghalaya-india2",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/living-root-bridge-maghalaya-india2.webp",
+    "caption": "A living root bridge",
+    "author": "Joydeep Chakraborty",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Living_root_bridge,_Maghalaya,_India2.jpg"
+  },
+  "meghalaya/living-root-bridges-of-nongriat-village-in-east-khasi-hills-": {
+    "id": "meghalaya/living-root-bridges-of-nongriat-village-in-east-khasi-hills-",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/living-root-bridges-of-nongriat-village-in-east-khasi-hills-.webp",
+    "caption": "The root bridges of Nongriat",
+    "author": "PJeganathan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district,_Meghalaya_JEG7387.jpg"
+  },
+  "meghalaya/nohkalikai-falls-v2-wiki": {
+    "id": "meghalaya/nohkalikai-falls-v2-wiki",
+    "place": "meghalaya",
+    "file": "/images/places/meghalaya/nohkalikai-falls-v2-wiki.webp",
+    "caption": "Nohkalikai falls, Sohra",
+    "author": "Vikramjit Kakati",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NohKaLikai_Falls_V2_Wiki.jpg"
+  },
   "mullayanagiri/hill-adjacent-to-mullayanagiri": {
     "id": "mullayanagiri/hill-adjacent-to-mullayanagiri",
     "place": "mullayanagiri",
@@ -729,7 +1466,7 @@
     "id": "mullayanagiri/mullayanagiri-chikmagalur-district-of-karnataka",
     "place": "mullayanagiri",
     "file": "/images/places/mullayanagiri/mullayanagiri-chikmagalur-district-of-karnataka.webp",
-    "caption": "Mullayanagiri, Karnataka\u2019s highest peak",
+    "caption": "Mullayanagiri, Karnataka’s highest peak",
     "author": "RakeshRaju M",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -801,6 +1538,39 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mangrove_Reflection_Wide_Ashtamudi_Kollam_Kerala_Mar22_A7C_01464.jpg"
+  },
+  "nagarhole/malabar-trogon-by-tisha-mukherjee-04": {
+    "id": "nagarhole/malabar-trogon-by-tisha-mukherjee-04",
+    "place": "nagarhole",
+    "file": "/images/places/nagarhole/malabar-trogon-by-tisha-mukherjee-04.webp",
+    "caption": "Malabar trogon on a forest branch",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malabar_Trogon_by_Tisha_Mukherjee_04.jpg"
+  },
+  "nagarhole/malabar-trogon-by-tisha-mukherjee-07": {
+    "id": "nagarhole/malabar-trogon-by-tisha-mukherjee-07",
+    "place": "nagarhole",
+    "file": "/images/places/nagarhole/malabar-trogon-by-tisha-mukherjee-07.webp",
+    "caption": "Malabar trogon",
+    "author": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malabar_Trogon_by_Tisha_Mukherjee_07.jpg"
+  },
+  "nagarhole/male-elephant-tusker-nagarhole-karnataka": {
+    "id": "nagarhole/male-elephant-tusker-nagarhole-karnataka",
+    "place": "nagarhole",
+    "file": "/images/places/nagarhole/male-elephant-tusker-nagarhole-karnataka.webp",
+    "caption": "A tusker in Nagarhole",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_Elephant_Tusker_Nagarhole_Karnataka_Apr22_D72_23736.jpg"
   },
   "neil/collared-kingfisher-at-neil-island-shaheed-dweep-south-andam": {
     "id": "neil/collared-kingfisher-at-neil-island-shaheed-dweep-south-andam",
@@ -1121,6 +1891,50 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snow_Rohtang_Range_Manali_May24_A7CR_00128.jpg"
   },
+  "sambhar/ride-to-sunset-at-sambhar-salt-lake": {
+    "id": "sambhar/ride-to-sunset-at-sambhar-salt-lake",
+    "place": "sambhar",
+    "file": "/images/places/sambhar/ride-to-sunset-at-sambhar-salt-lake.webp",
+    "caption": "A motorbike at sunset on Sambhar lake",
+    "author": "Abhishek.cty",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ride_to_sunset_at_Sambhar_Salt_Lake.jpg"
+  },
+  "sambhar/sambhar-lake-a-salted-bed": {
+    "id": "sambhar/sambhar-lake-a-salted-bed",
+    "place": "sambhar",
+    "file": "/images/places/sambhar/sambhar-lake-a-salted-bed.webp",
+    "caption": "The salt flats of Sambhar",
+    "author": "Kalidas Singh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sambhar_lake_a_salted_bed.jpg"
+  },
+  "sambhar/sambhar-lake-sunset-scene": {
+    "id": "sambhar/sambhar-lake-sunset-scene",
+    "place": "sambhar",
+    "file": "/images/places/sambhar/sambhar-lake-sunset-scene.webp",
+    "caption": "Sunset over Sambhar salt lake",
+    "author": "Nawanshu91",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sambhar_lake_sunset_scene.JPG"
+  },
+  "sambhar/shakambri-mata-temple-sambhar-lake": {
+    "id": "sambhar/shakambri-mata-temple-sambhar-lake",
+    "place": "sambhar",
+    "file": "/images/places/sambhar/shakambri-mata-temple-sambhar-lake.webp",
+    "caption": "Shakambari temple above Sambhar lake",
+    "author": "Devendrasinghjadav",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakambri_Mata_temple_,sambhar_lake.jpg"
+  },
   "shey/view-from-shey-palace-02": {
     "id": "shey/view-from-shey-palace-02",
     "place": "shey",
@@ -1171,7 +1985,7 @@
     "file": "/images/places/team/preetham-lawrence.webp",
     "caption": "Preetham Lawrence, founder of Raasta",
     "author": "Raasta",
-    "license": "\u00a9 Raasta",
+    "license": "© Raasta",
     "licenseUrl": "",
     "source": "Raasta",
     "sourceUrl": ""
@@ -1208,6 +2022,17 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charmadi_Ghat_(30939383822).jpg"
+  },
+  "western-ghats/malabar-whistling-thrush-myophonus-horsfieldii-from-anaimala": {
+    "id": "western-ghats/malabar-whistling-thrush-myophonus-horsfieldii-from-anaimala",
+    "place": "western-ghats",
+    "file": "/images/places/western-ghats/malabar-whistling-thrush-myophonus-horsfieldii-from-anaimala.webp",
+    "caption": "Malabar whistling thrush, Western Ghats",
+    "author": "PJeganathan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malabar_whistling_thrush_(Myophonus_horsfieldii)_from_anaimalai_hills_JEG4932.jpg"
   },
   "yumthang/landscape-on-the-way-from-yumthang-valley-to-yumsedong-zero-": {
     "id": "yumthang/landscape-on-the-way-from-yumthang-valley-to-yumsedong-zero-",
