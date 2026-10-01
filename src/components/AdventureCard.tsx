@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Caravan } from 'lucide-react';
 import { CATEGORIES, isFillingFast, type Adventure, type Media } from '@/data/adventures';
 
 export function MediaView({ media, className = '' }: { media: Media; className?: string }) {
@@ -99,7 +100,10 @@ export function AdventureCard({ adventure: a, className = '' }: { adventure: Adv
           <p className="mt-2 text-[13px] text-white/75">
             {a.days.length} days · Group of {a.groupSize} · Next {a.nextDeparture.replace(/ \d{4}$/, '')}
           </p>
-          <div className="mt-5">
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-1 text-[12px] font-medium backdrop-blur-md">
+            <Caravan size={13} /> Support caravan with washroom
+          </p>
+          <div className="mt-4">
             <SpotsMeter adventure={a} />
           </div>
         </div>

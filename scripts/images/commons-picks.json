@@ -981,16 +981,6 @@
  },
  {
   "place": "caravan",
-  "title": "File:VW Grand California 600 2.0 TDI \u2013 f 03072021.jpg",
-  "caption": "Volkswagen Grand California, the kind of caravan we travel with"
- },
- {
-  "place": "caravan",
-  "title": "File:IAA 2024, Hanover (P1200113).jpg",
-  "caption": "Grand California with the side door open"
- },
- {
-  "place": "caravan",
   "title": "File:Bordtoilette Bad eines Wohnmobil.JPG",
   "caption": "A motorhome washroom with toilet and basin"
  },
@@ -1003,5 +993,15 @@
   "place": "caravan",
   "title": "File:Self-converted Sprinter Camper Van.jpg",
   "caption": "A bed at the back of a camper van"
+ },
+ {
+  "place": "caravan",
+  "title": "File:Ride Atire Sprinter.jpg",
+  "caption": "A custom-built camper with a wood-panelled bed, cabinets and sink"
+ },
+ {
+  "place": "caravan",
+  "title": "File:Freightliner by Mercedes camper (9677678127).jpg",
+  "caption": "A support camper set up at camp"
  }
 ]

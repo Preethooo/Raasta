@@ -208,16 +208,27 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bordtoilette_Bad_eines_Wohnmobil.JPG"
   },
-  "caravan/iaa-2024-hanover-p1200113": {
-    "id": "caravan/iaa-2024-hanover-p1200113",
+  "caravan/freightliner-by-mercedes-camper": {
+    "id": "caravan/freightliner-by-mercedes-camper",
     "place": "caravan",
-    "file": "/images/places/caravan/iaa-2024-hanover-p1200113.webp",
-    "caption": "Grand California with the side door open",
-    "author": "Matti Blume",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "file": "/images/places/caravan/freightliner-by-mercedes-camper.webp",
+    "caption": "A support camper set up at camp",
+    "author": "Ken Ratcliff",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IAA_2024,_Hanover_(P1200113).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freightliner_by_Mercedes_camper_(9677678127).jpg"
+  },
+  "caravan/ride-atire-sprinter": {
+    "id": "caravan/ride-atire-sprinter",
+    "place": "caravan",
+    "file": "/images/places/caravan/ride-atire-sprinter.webp",
+    "caption": "A custom-built camper with a wood-panelled bed, cabinets and sink",
+    "author": "Justinrsharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ride_Atire_Sprinter.jpg"
   },
   "caravan/self-converted-sprinter-camper-van": {
     "id": "caravan/self-converted-sprinter-camper-van",
@@ -230,16 +241,16 @@
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Self-converted_Sprinter_Camper_Van.jpg"
   },
-  "caravan/vw-grand-california-600-20-tdi-f-03072021": {
-    "id": "caravan/vw-grand-california-600-20-tdi-f-03072021",
+  "caravan/washroom-toilet-and-basin": {
+    "id": "caravan/washroom-toilet-and-basin",
     "place": "caravan",
-    "file": "/images/places/caravan/vw-grand-california-600-20-tdi-f-03072021.webp",
-    "caption": "Volkswagen Grand California, the kind of caravan we travel with",
-    "author": "© M 93",
-    "license": "CC BY-SA 3.0 de",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "file": "/images/places/caravan/washroom-toilet-and-basin.webp",
+    "caption": "A motorhome washroom with toilet and basin (cropped)",
+    "author": "Seekater",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:VW_Grand_California_600_2.0_TDI_%E2%80%93_f_03072021.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bordtoilette_Bad_eines_Wohnmobil.JPG"
   },
   "chang-la/changla-pass-india-2": {
     "id": "chang-la/changla-pass-india-2",
