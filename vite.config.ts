@@ -4,6 +4,7 @@ import path from 'node:path';
 
 export default defineConfig({
   plugins: [react()],
+  preview: { allowedHosts: ['.loca.lt'] },
   resolve: {
     alias: { '@': path.resolve(__dirname, 'src') },
   },
