@@ -11,6 +11,8 @@ export type Photo = {
   licenseUrl: string;
   source: string; // "Wikimedia Commons", "Raasta", ...
   sourceUrl: string;
+  /** House grade applied (scripts/images/grade.ts). */
+  graded?: boolean;
 };
 
 const MANIFEST = new URL('../../src/data/photos.json', import.meta.url);

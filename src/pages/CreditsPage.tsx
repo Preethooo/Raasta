@@ -12,7 +12,7 @@ export function CreditsPage() {
           <h1 className="text-[clamp(2.75rem,6vw,5rem)] font-semibold leading-[1.02] tracking-[-0.03em]">Photo credits.</h1>
           <p className={`mt-5 max-w-2xl text-lg ${MUTED_LIGHT}`}>
             Thank you to the photographers whose work shows these places as they really are. Photos are used under the
-            licences listed and have been resized.
+            licences listed and have been resized, cropped and colour-graded.
           </p>
         </Reveal>
         <ul className="mt-12 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">

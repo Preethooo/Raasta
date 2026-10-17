@@ -11,6 +11,7 @@ export type Photo = {
   licenseUrl: string;
   source: string;
   sourceUrl: string;
+  graded?: boolean;
 };
 
 export const PHOTO_LIBRARY = PHOTOS as Record<string, Photo>;

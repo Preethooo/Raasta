@@ -11,7 +11,8 @@
     "images:find": "node scripts/images/find-candidates.ts",
     "images:import": "node scripts/images/import-commons.ts",
     "routes:build": "node scripts/build-routes.ts",
-    "textures:build": "node scripts/build-topo.ts"
+    "textures:build": "node scripts/build-topo.ts",
+    "images:grade": "node scripts/images/grade-library.ts"
   },
   "dependencies": {
     "lucide-react": "^1.49.0",

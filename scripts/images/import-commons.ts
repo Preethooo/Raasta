@@ -7,6 +7,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import sharp from 'sharp';
 import { loadManifest, saveManifest, slugify, type Photo } from './library.ts';
+import { execFileSync } from 'node:child_process';
 
 type Pick = { place: string; title: string; caption?: string };
 
@@ -108,3 +109,5 @@ for (const pick of picks) {
 }
 saveManifest(manifest);
 console.log(`${Object.keys(manifest).length} photos in library`);
+// New imports get the house grade too.
+execFileSync(process.execPath, [new URL('./grade-library.ts', import.meta.url).pathname], { stdio: 'inherit' });
