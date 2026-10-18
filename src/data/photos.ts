@@ -26,4 +26,8 @@ export const photoSrc = (id: string) => getPhoto(id).file;
 
 /** "Photo: Jane Doe, CC BY-SA 4.0" */
 export const creditLine = (p: Photo) =>
-  p.source === 'Raasta' ? 'Photo: Raasta' : `Photo: ${p.author}, ${p.license}, via ${p.source}`;
+  p.source === 'Raasta concept render'
+    ? 'Concept render'
+    : p.source === 'Raasta'
+      ? 'Photo: Raasta'
+      : `Photo: ${p.author}, ${p.license}, via ${p.source}`;

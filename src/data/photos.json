@@ -203,30 +203,6 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mangroves_at_baratang,Andaman.jpg",
     "graded": true
   },
-  "caravan/bespoke-volkswagen-campervan-interior-built-by-the-wee-campe": {
-    "id": "caravan/bespoke-volkswagen-campervan-interior-built-by-the-wee-campe",
-    "place": "caravan",
-    "file": "/images/places/caravan/bespoke-volkswagen-campervan-interior-built-by-the-wee-campe.webp",
-    "caption": "A campervan kitchen with hob and sink",
-    "author": "Danny6060",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bespoke_Volkswagen_campervan_interior_built_by_The_Wee_Camper_Co..jpg",
-    "graded": true
-  },
-  "caravan/bordtoilette-bad-eines-wohnmobil": {
-    "id": "caravan/bordtoilette-bad-eines-wohnmobil",
-    "place": "caravan",
-    "file": "/images/places/caravan/bordtoilette-bad-eines-wohnmobil.webp",
-    "caption": "A motorhome washroom with toilet and basin",
-    "author": "Seekater",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bordtoilette_Bad_eines_Wohnmobil.JPG",
-    "graded": true
-  },
   "caravan/expedition-camper-ladakh-dusk": {
     "place": "caravan",
     "caption": "An expedition camper parked by a Ladakh road at dusk",
@@ -251,16 +227,64 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freightliner_by_Mercedes_camper_(9677678127).jpg",
     "graded": true
   },
-  "caravan/ride-atire-sprinter": {
-    "id": "caravan/ride-atire-sprinter",
+  "caravan/render-bed": {
+    "id": "caravan/render-bed",
     "place": "caravan",
-    "file": "/images/places/caravan/ride-atire-sprinter.webp",
-    "caption": "A custom-built camper with a wood-panelled bed, cabinets and sink",
-    "author": "Justinrsharp",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ride_Atire_Sprinter.jpg",
+    "file": "/images/places/caravan/render-bed.webp",
+    "caption": "Raasta caravan rear bed (concept render)",
+    "author": "Raasta",
+    "license": "© Raasta",
+    "licenseUrl": "",
+    "source": "Raasta concept render",
+    "sourceUrl": "",
+    "graded": true
+  },
+  "caravan/render-exterior": {
+    "id": "caravan/render-exterior",
+    "place": "caravan",
+    "file": "/images/places/caravan/render-exterior.webp",
+    "caption": "Raasta caravan at dusk in Ladakh (concept render)",
+    "author": "Raasta",
+    "license": "© Raasta",
+    "licenseUrl": "",
+    "source": "Raasta concept render",
+    "sourceUrl": "",
+    "graded": true
+  },
+  "caravan/render-kitchen": {
+    "id": "caravan/render-kitchen",
+    "place": "caravan",
+    "file": "/images/places/caravan/render-kitchen.webp",
+    "caption": "Raasta caravan kitchen (concept render)",
+    "author": "Raasta",
+    "license": "© Raasta",
+    "licenseUrl": "",
+    "source": "Raasta concept render",
+    "sourceUrl": "",
+    "graded": true
+  },
+  "caravan/render-toilet": {
+    "id": "caravan/render-toilet",
+    "place": "caravan",
+    "file": "/images/places/caravan/render-toilet.webp",
+    "caption": "Raasta caravan toilet (concept render)",
+    "author": "Raasta",
+    "license": "© Raasta",
+    "licenseUrl": "",
+    "source": "Raasta concept render",
+    "sourceUrl": "",
+    "graded": true
+  },
+  "caravan/render-washroom": {
+    "id": "caravan/render-washroom",
+    "place": "caravan",
+    "file": "/images/places/caravan/render-washroom.webp",
+    "caption": "Raasta caravan washroom (concept render)",
+    "author": "Raasta",
+    "license": "© Raasta",
+    "licenseUrl": "",
+    "source": "Raasta concept render",
+    "sourceUrl": "",
     "graded": true
   },
   "caravan/self-converted-sprinter-camper-van": {
@@ -273,18 +297,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Self-converted_Sprinter_Camper_Van.jpg",
-    "graded": true
-  },
-  "caravan/washroom-toilet-and-basin": {
-    "id": "caravan/washroom-toilet-and-basin",
-    "place": "caravan",
-    "file": "/images/places/caravan/washroom-toilet-and-basin.webp",
-    "caption": "A motorhome washroom with toilet and basin (cropped)",
-    "author": "Seekater",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-    "source": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bordtoilette_Bad_eines_Wohnmobil.JPG",
     "graded": true
   },
   "chang-la/changla-pass-india-2": {

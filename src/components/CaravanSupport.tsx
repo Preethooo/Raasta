@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import { BedDouble, Caravan, ChefHat, ChevronLeft, ChevronRight, ShowerHead, Users, type LucideIcon } from 'lucide-react';
+import { BedDouble, Caravan, ChefHat, ChevronLeft, ChevronRight, ShowerHead, Sparkles, Users, type LucideIcon } from 'lucide-react';
 import { creditLine, getPhoto } from '@/data/photos';
 import { Reveal } from '@/motion';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, SECTION_TITLE } from '@/ui';
 
 /*
  * Raasta's core promise, as one sleek card carousel: every trip travels with a
- * custom-built support caravan. Photos are of comparable custom campers.
+ * custom-built support caravan. Images are concept renders of the caravan.
  */
 
 type Slide = {
@@ -15,38 +15,47 @@ type Slide = {
   title: string;
   body: string;
   photo: string;
-  /** Optional crop: zoom towards a point, e.g. to keep the toilet in frame. */
-  zoom?: { scale: number; origin: string };
+  /** Focal point for the portrait crop of a landscape render (CSS object-position). */
+  focus?: string;
 };
 
 const SLIDES: Slide[] = [
   {
     icon: ShowerHead,
     kicker: 'Washroom',
-    title: 'A clean, private toilet.',
-    body: 'Toilet and basin, cleaned by our crew every day. Never a roadside bush again.',
-    photo: 'caravan/washroom-toilet-and-basin',
+    title: 'A clean, private washroom.',
+    body: 'Hot shower, basin and mirror on board. Never a roadside bush again.',
+    photo: 'caravan/render-washroom',
+    focus: '55% 50%',
+  },
+  {
+    icon: Sparkles,
+    kicker: 'Toilet',
+    title: 'Spotless, every single day.',
+    body: 'Our crew cleans the toilet every day, before the first rider is up.',
+    photo: 'caravan/render-toilet',
   },
   {
     icon: BedDouble,
     kicker: 'Rest',
     title: 'A bed when you need one.',
     body: 'Altitude, heat or a long day? Lie down and ride along while the group carries on.',
-    photo: 'caravan/ride-atire-sprinter',
+    photo: 'caravan/render-bed',
   },
   {
     icon: ChefHat,
     kicker: 'Kitchen',
     title: 'Chai at the top of the pass.',
     body: 'Hot meals, fresh snacks and filtered drinking water, wherever the road goes.',
-    photo: 'caravan/bespoke-volkswagen-campervan-interior-built-by-the-wee-campe',
+    photo: 'caravan/render-kitchen',
   },
   {
     icon: Users,
     kicker: 'Crew',
     title: 'Always a few minutes away.',
     body: 'A dedicated driver and support crew follow the group every day, on every route.',
-    photo: 'caravan/expedition-camper-ladakh-dusk',
+    photo: 'caravan/render-exterior',
+    focus: '30% 50%',
   },
 ];
 
@@ -124,7 +133,7 @@ export function CaravanSupport({ compact = false }: { compact?: boolean }) {
           </div>
         </article>
 
-        {SLIDES.map(({ icon: Icon, kicker, title, body, photo, zoom }) => {
+        {SLIDES.map(({ icon: Icon, kicker, title, body, photo, focus }) => {
           const p = getPhoto(photo);
           return (
             <article
@@ -132,17 +141,13 @@ export function CaravanSupport({ compact = false }: { compact?: boolean }) {
               data-slide
               className="group relative aspect-[4/5] w-[82vw] shrink-0 snap-start overflow-hidden rounded-[28px] bg-[#e8e8ed] text-white sm:w-[360px]"
             >
-              <div
-                className="absolute inset-0"
-                style={zoom ? { transform: `scale(${zoom.scale})`, transformOrigin: zoom.origin } : undefined}
-              >
-                <img
-                  src={p.file}
-                  alt={p.caption}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
+              <img
+                src={p.file}
+                alt={p.caption}
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                style={focus ? { objectPosition: focus } : undefined}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/10" />
               <span className="absolute left-6 top-6 inline-flex items-center gap-1.5 rounded-full bg-black/35 px-3 py-1.5 text-xs font-medium backdrop-blur-md">
                 <Icon size={14} />
@@ -158,7 +163,7 @@ export function CaravanSupport({ compact = false }: { compact?: boolean }) {
         })}
       </div>
 
-      <p className={`${CONTAINER} mt-5 text-xs text-[#6e6e73]`}>Photos show comparable custom-built campers.</p>
+      <p className={`${CONTAINER} mt-5 text-xs text-[#6e6e73]`}>Images are concept renders of the Raasta caravan.</p>
     </section>
   );
 }
