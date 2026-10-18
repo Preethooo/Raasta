@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Play, X } from 'lucide-react';
 import { SECTION_TITLE } from '@/ui';
+import { creditLine, getPhoto } from '@/data/photos';
+
+// Placeholder until our own film's poster frame is ready.
+const BACKDROP = 'ladakh/riders-on-a-snowy-pass';
 
 const FILM_SRC = '/hero.mp4';
 
@@ -20,7 +24,8 @@ export function Experience() {
 
   return (
     <section id="experience" data-surface="dark" className="relative h-screen min-h-[560px] overflow-hidden bg-black text-white">
-      <img src="/images/experience.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
+      <img src={getPhoto(BACKDROP).file} alt={getPhoto(BACKDROP).caption} className="absolute inset-0 h-full w-full object-cover" />
+      <span className="absolute bottom-3 right-4 z-[1] text-[10px] text-white/50">{creditLine(getPhoto(BACKDROP))}</span>
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/20" />
 
       <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-start justify-end px-6 pb-20 sm:px-8 md:px-12 md:pb-28 lg:px-20">
