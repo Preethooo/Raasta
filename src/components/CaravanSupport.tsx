@@ -46,7 +46,7 @@ const SLIDES: Slide[] = [
     kicker: 'Crew',
     title: 'Always a few minutes away.',
     body: 'A dedicated driver and support crew follow the group every day, on every route.',
-    photo: 'caravan/freightliner-by-mercedes-camper',
+    photo: 'caravan/expedition-camper-ladakh-dusk',
   },
 ];
 

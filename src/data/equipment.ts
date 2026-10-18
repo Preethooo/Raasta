@@ -46,7 +46,7 @@ export const EQUIPMENT: Record<string, EquipmentItem> = {
     kind: 'motorbike',
     maker: 'Royal Enfield',
     name: 'Himalayan 450',
-    photo: 'equipment/royal-enfield-himalayan-450',
+    photo: 'equipment/royal-enfield-himalayan-on-gravel',
     summary:
       'Royal Enfield’s adventure tourer, “adventurous by spirit, versatile by DNA”. The liquid-cooled Sherpa engine keeps 90% of its torque from 3,000 rpm, made for high passes and broken roads.',
     specs: [

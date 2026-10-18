@@ -14,7 +14,7 @@ export const CATEGORIES: Record<CategoryId, { label: string; icon: LucideIcon; t
     label: 'Motorbiking',
     icon: Motorbike,
     tagline: 'Ride India’s great roads with a lead rider, a support vehicle and nothing to worry about but the next bend.',
-    image: photoSrc('khardung-la/manfred-uhde-khardung-la-road'),
+    image: photoSrc('ladakh/riders-on-a-ladakh-desert-road'),
   },
   cycling: {
     label: 'Cycling',
@@ -44,7 +44,7 @@ export const CATEGORIES: Record<CategoryId, { label: string; icon: LucideIcon; t
     label: 'Camping & expeditions',
     icon: Tent,
     tagline: 'Remote, expedition-style trips for those who want no signal and a sky full of stars.',
-    image: photoSrc('rangdum/rangdum-village-sheep'),
+    image: photoSrc('zanskar/camping-by-the-zanskar-river'),
   },
   heritage: {
     label: 'Heritage adventures',
@@ -253,8 +253,8 @@ export const ADVENTURES: Adventure[] = [
     nextDeparture: '6 June 2027',
     groupSize: 14,
     spotsLeft: 9,
-    image: photoSrc('pangong/pangong-tso-in-eastern-ladakhchangthang'),
-    banner: pic('pangong/pangong-tso-ladakh-india'),
+    image: photoSrc('ladakh/the-highway-in-heaven'),
+    banner: pic('ladakh/riders-on-a-ladakh-desert-road'),
     stops: [
       { name: 'Leh', note: 'Start · Days 1–2', coords: [77.5771, 34.1526] },
       { name: 'Diskit', note: 'Nubra Valley · Days 3–4', coords: [77.562, 34.5539] },
@@ -263,28 +263,28 @@ export const ADVENTURES: Adventure[] = [
     legModes: ['road', 'road'],
     days: [
       { title: 'Arrive and acclimatise', body: 'Land in Leh, rest, and take a slow walk through the old town.', highlights: ['Rest day', 'Old town walk'], media: pic('leh/leh-village-from-shanti-stupa-2') },
-      { title: 'Monasteries of the Indus', body: 'A short warm-up ride to Thiksey and Hemis to get used to the altitude.', highlights: ['80 km ride', 'Monastery visits'], media: pic('thiksey/thiksey-monastery-ladakh-07') },
-      { title: 'Khardung La', body: 'Climb to 5,359 m and drop into the Nubra Valley.', highlights: ['High pass', 'Desert camp'], media: pic('khardung-la/manfred-uhde-khardung-la-road') },
-      { title: 'Nubra at your own pace', body: 'Dunes, double-humped camels and a free afternoon.', highlights: ['Free afternoon'], media: pic('nubra/nubra-valley') },
-      { title: 'The Shyok road to Pangong', body: 'A remote river road to the lake, arriving for sunset.', highlights: ['160 km ride', 'Lakeside camp'], media: pic('pangong/late-afternoon-at-the-pangong-tso') },
-      { title: 'Back to Leh', body: 'Over Chang La and home for a farewell dinner.', highlights: ['Chang La pass'], media: pic('ladakh/ladakh-mountain') },
+      { title: 'Monasteries of the Indus', body: 'A short warm-up ride to Thiksey and Hemis to get used to the altitude.', highlights: ['80 km ride', 'Monastery visits'], media: pic('ladakh/riders-at-pangong') },
+      { title: 'Khardung La', body: 'Climb to 5,359 m and drop into the Nubra Valley.', highlights: ['High pass', 'Desert camp'], media: pic('ladakh/riding-between-snow-walls') },
+      { title: 'Nubra at your own pace', body: 'Dunes, double-humped camels and a free afternoon.', highlights: ['Free afternoon'], media: pic('nubra/camels-in-nubra-light') },
+      { title: 'The Shyok road to Pangong', body: 'A remote river road to the lake, arriving for sunset.', highlights: ['160 km ride', 'Lakeside camp'], media: pic('ladakh/river-crossing-on-royal-enfields') },
+      { title: 'Back to Leh', body: 'Over Chang La and home for a farewell dinner.', highlights: ['Chang La pass'], media: pic('ladakh/riders-on-a-snowy-pass') },
     ],
     gallery: [
-      'nubra/sand-dunes-and-poplars-nubra-valley-ladakh',
-      'nubra/nubra-valley-2',
-      'nubra/en-route-nubra-valley-from-leh-ladakh-india',
-      'shey/view-from-shey-palace-02',
-      'pangong/pangong-tso-3',
+      'ladakh/riders-on-a-ladakh-desert-road',
+      'ladakh/easy-rider-ladakh',
+      'ladakh/riding-the-desert-near-pang',
+      'nubra/camels-in-nubra-light',
+      'ladakh/river-crossing-on-royal-enfields',
+      'pangong/late-afternoon-at-the-pangong-tso',
+      'ladakh/riders-on-a-snowy-pass',
       'khardung-la/yak-near-khardung-la-mountain-pass',
-      'chang-la/changla-pass-india-2',
-      'leh/leh-02',
     ],
     equipment: ['re-himalayan-450', 're-classic-350', 'riding-gear'],
     extras: [
       {
         title: 'Camel trail in the Hunder dunes',
         body: 'An evening on double-humped Bactrian camels across the Nubra dunes.',
-        photo: 'nubra/nubra-valley',
+        photo: 'nubra/camels-in-nubra-light',
       },
       {
         title: 'Lakeside camp at Pangong',
@@ -310,7 +310,7 @@ export const ADVENTURES: Adventure[] = [
     groupSize: 10,
     spotsLeft: 2,
     image: photoSrc('kaza/spiti-river-kaza-himachal'),
-    banner: pic('key-monastery/key-monastery-spiti-himachal-pradesh'),
+    banner: pic('key-monastery/key-monastery-blue-hour'),
     stops: [
       { name: 'Kaza', note: 'Start', coords: [78.071, 32.2276] },
       { name: 'Key', note: 'Monastery', coords: [78.0119, 32.2977] },
@@ -326,6 +326,9 @@ export const ADVENTURES: Adventure[] = [
       { title: 'Back to Kaza', body: 'Descend for a final evening together.', highlights: ['Farewell dinner'], media: pic('spiti/nh505-spiti-kaza-losar') },
     ],
     gallery: [
+      'spiti/cliff-road-above-the-river',
+      'spiti/road-to-spiti-valley',
+      'spiti/bikers-in-spiti-valley',
       'spiti/spiti-gorge-kaza-losar',
       'pin-valley/yellow-billed-chough-pin-valley-spiti-himachal',
       'kibber/kanamo-peak-south-kibber-spiti',
@@ -550,6 +553,7 @@ export const ADVENTURES: Adventure[] = [
       { title: 'Return', body: 'Long drive back to Kargil.', highlights: ['Transfer'], media: pic('zanskar/fields-zangla-zanskar-river-ladakh') },
     ],
     gallery: [
+      'zanskar/camping-by-the-zanskar-river',
       'pensi-la/penzi-la-3',
       'rangdum/rangdum-village-of-zanskar-in-kargil',
       'padum/gonbo-rangjon-shinko-la-zanskar',
@@ -562,7 +566,7 @@ export const ADVENTURES: Adventure[] = [
       {
         title: 'Tents and a campfire every night',
         body: 'Our crew pitches camp before you arrive: warm tents, a dining tent and a fire under the stars.',
-        photo: 'equipment/tent-camps-in-sarchu',
+        photo: 'zanskar/camping-by-the-zanskar-river',
       },
       {
         title: 'Rafting the Zanskar river',
