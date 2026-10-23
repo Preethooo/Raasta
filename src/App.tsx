@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/sections/Footer';
@@ -9,6 +9,11 @@ import { AdventurePage } from '@/pages/AdventurePage';
 import { AboutPage } from '@/pages/AboutPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import { CreditsPage } from '@/pages/CreditsPage';
+import { RentalsPage } from '@/pages/RentalsPage';
+
+// The partner portal and admin console are separate apps, loaded only when visited.
+const PartnerApp = lazy(() => import('@/portal/PartnerApp'));
+const AdminApp = lazy(() => import('@/admin/AdminApp'));
 
 /** Jump to the top on page change, or to `#section` when the link has one. */
 function ScrollToTop() {
@@ -26,6 +31,20 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const { pathname } = useLocation();
+  if (/^\/(partner|admin)(\/|$)/.test(pathname)) {
+    return (
+      <>
+        <ScrollToTop />
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/partner/*" element={<PartnerApp />} />
+            <Route path="/admin/*" element={<AdminApp />} />
+          </Routes>
+        </Suspense>
+      </>
+    );
+  }
   return (
     <>
       <ScrollToTop />
@@ -39,6 +58,7 @@ export default function App() {
           <Route path="/adventures/:slug" element={<AdventurePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/credits" element={<CreditsPage />} />
+          <Route path="/rentals" element={<RentalsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

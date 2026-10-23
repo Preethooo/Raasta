@@ -18,6 +18,14 @@ const COLUMNS: { heading: string; links: { to: string; label: string }[] }[] = [
       { to: '/', label: 'Home' },
       { to: '/adventures', label: 'All adventures' },
       { to: '/about', label: 'About us' },
+      { to: '/rentals', label: 'Rent gear & add-ons' },
+    ],
+  },
+  {
+    heading: 'Partners',
+    links: [
+      { to: '/partner', label: 'Become a partner' },
+      { to: '/partner', label: 'Partner sign in' },
     ],
   },
 ];
@@ -31,13 +39,13 @@ export function Footer() {
           <p className="mt-3">Thoughtfully crafted journeys. Deeply local experiences.</p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 py-8 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-8 py-8 sm:grid-cols-4">
           {COLUMNS.map((col) => (
             <div key={col.heading}>
               <h3 className="font-semibold text-[#1d1d1f]">{col.heading}</h3>
               <ul className="mt-3 space-y-2.5">
                 {col.links.map((l) => (
-                  <li key={l.to}>
+                  <li key={l.label}>
                     <Link to={l.to} className="hover:text-[#1d1d1f] hover:underline">
                       {l.label}
                     </Link>

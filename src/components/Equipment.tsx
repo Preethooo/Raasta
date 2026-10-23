@@ -5,6 +5,9 @@ import { creditLine, getPhoto } from '@/data/photos';
 import { Reveal } from '@/motion';
 import { BG_SUBTLE, CONTAINER, INK_LIGHT, MUTED_LIGHT, SECTION_TITLE } from '@/ui';
 import { DarkSection } from '@/components/Surface';
+import { Link } from 'react-router-dom';
+import { useApi, type CatalogItem } from '@/lib/api';
+import { ItemCard } from '@/pages/RentalsPage';
 
 const LEAD: Record<CategoryId, string> = {
   motorbiking: 'Motorbikes, a mechanic and a ride leader come with every trip. No breakdown worries, no route-finding. You just ride.',
@@ -193,7 +196,10 @@ function EquipmentCard({
 
 /** Unique experiences laid on for this particular trip. */
 export function Extras({ adventure: a }: { adventure: Adventure }) {
-  if (!a.extras.length) return null;
+  // Approved add-on experiences from partners who paired them with this trip.
+  const { data } = useApi<{ items: CatalogItem[] }>(`catalog?adventure=${a.slug}`);
+  const partner = data?.items ?? [];
+  if (!a.extras.length && !partner.length) return null;
   return (
     <DarkSection className="pb-24 md:pb-32">
       <div className={CONTAINER}>
@@ -226,6 +232,25 @@ export function Extras({ adventure: a }: { adventure: Adventure }) {
             );
           })}
         </div>
+        {partner.length > 0 && (
+          <>
+            <Reveal>
+              <h3 className="mt-16 text-2xl font-semibold tracking-[-0.01em]">Add on, from our local partners.</h3>
+              <p className="mt-2 text-[15px] text-white/60">
+                Book these alongside your trip — checked and approved by the Raasta team.
+              </p>
+            </Reveal>
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {partner.map((item, i) => (
+                <Reveal key={item.id} delay={i * 100}>
+                  <Link to="/rentals" className="group block h-full">
+                    <ItemCard item={item} dark />
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </DarkSection>
   );

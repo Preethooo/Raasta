@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   worker: { format: 'es' },
   // Lets a tunnel URL (for testing on a phone) reach `vite preview`.
-  preview: { allowedHosts: ['.loca.lt'] },
+  preview: { allowedHosts: ['.loca.lt'], proxy: { '/api': 'http://localhost:8787' } },
+  server: { proxy: { '/api': 'http://localhost:8787' } },
   resolve: {
     alias: { '@': path.resolve(__dirname, 'src') },
   },
